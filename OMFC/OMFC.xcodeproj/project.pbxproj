@@ -36,6 +36,8 @@
 		A714FA0C1E9DE505007849EE /* GDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA0B1E9DE505007849EE /* GDBViewController.m */; };
 		A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA131E9E1CBB007849EE /* CategoryViewController.m */; };
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
+		ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */; };
+		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,14 @@
 		A714FA131E9E1CBB007849EE /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		A714FA151E9E1DAC007849EE /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
 		A714FA161E9E1DAC007849EE /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
+		ADAACA141F0C76A2006FB73C /* HeighCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeighCustomCell.h; sourceTree = "<group>"; };
+		ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeighCustomCell.m; sourceTree = "<group>"; };
+		ADB7927B1F0B2FC200A8DEF5 /* HeighViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeighViewController.h; sourceTree = "<group>"; };
+		ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeighViewController.m; sourceTree = "<group>"; };
+		ADB7927E1F0B325E00A8DEF5 /* AngelDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngelDoctor.h; sourceTree = "<group>"; };
+		ADB7927F1F0B325E00A8DEF5 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		ADB792801F0B325E00A8DEF5 /* KMCloudHealth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCloudHealth.h; sourceTree = "<group>"; };
+		ADB792811F0B325E00A8DEF5 /* KMHealthBAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHealthBAT.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +172,10 @@
 			children = (
 				A714F9B51E9DDF40007849EE /* main.m */,
 				A714F9CB1E9DDFD6007849EE /* FCPrefixHeader.pch */,
+				ADB7927E1F0B325E00A8DEF5 /* AngelDoctor.h */,
+				ADB7927F1F0B325E00A8DEF5 /* Header.h */,
+				ADB792801F0B325E00A8DEF5 /* KMCloudHealth.h */,
+				ADB792811F0B325E00A8DEF5 /* KMHealthBAT.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,6 +255,7 @@
 			children = (
 				A714FA0D1E9E19CC007849EE /* 类别 */,
 				A714FA091E9DE4F2007849EE /* 打印、GDB */,
+				ADB7927A1F0B2F9F00A8DEF5 /* 获取高度 */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +299,25 @@
 				A70F47111EA067FD003914CC /* NSDictionary+Log.m */,
 			);
 			path = "数组打印汉字";
+			sourceTree = "<group>";
+		};
+		ADAACA131F0C767E006FB73C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADAACA141F0C76A2006FB73C /* HeighCustomCell.h */,
+				ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADB7927A1F0B2F9F00A8DEF5 /* 获取高度 */ = {
+			isa = PBXGroup;
+			children = (
+				ADAACA131F0C767E006FB73C /* View */,
+				ADB7927B1F0B2FC200A8DEF5 /* HeighViewController.h */,
+				ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */,
+			);
+			path = "获取高度";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +404,7 @@
 				A714F9BC1E9DDF41007849EE /* ViewController.m in Sources */,
 				A714F9B91E9DDF41007849EE /* AppDelegate.m in Sources */,
 				A714FA021E9DE044007849EE /* MASViewAttribute.m in Sources */,
+				ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */,
 				A714F9FE1E9DE044007849EE /* MASCompositeConstraint.m in Sources */,
 				A714F9B61E9DDF40007849EE /* main.m in Sources */,
 				A714F9FC1E9DE044007849EE /* UIImage+Tool.m in Sources */,
@@ -381,6 +416,7 @@
 				A714FA041E9DE044007849EE /* NSArray+MASAdditions.m in Sources */,
 				A714F9FD1E9DE044007849EE /* UILabel+Siman.m in Sources */,
 				A714F9F91E9DE044007849EE /* UIButton+SQTool.m in Sources */,
+				ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */,
 				A714F9FB1E9DE044007849EE /* UIColor+HNExtensions.m in Sources */,
 				A714FA031E9DE044007849EE /* MASViewConstraint.m in Sources */,
 				A714FA071E9DE044007849EE /* TTTAttributedLabel.m in Sources */,

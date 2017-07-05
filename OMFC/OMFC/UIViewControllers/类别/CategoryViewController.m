@@ -77,7 +77,6 @@
     }
     else if (indexPath.row == 2)
     {
-        [self ];
     }
     else if (indexPath.row == 3)
     {

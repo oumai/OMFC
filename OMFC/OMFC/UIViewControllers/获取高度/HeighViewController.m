@@ -27,7 +27,6 @@ static NSString *string = @"如果我能看得见就能轻易的分辨白天黑�
 -(UITableView *)tableView {
     
     
-    
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
         _tableView.backgroundColor = BASE_BACKGROUND_COLOR;
@@ -35,8 +34,6 @@ static NSString *string = @"如果我能看得见就能轻易的分辨白天黑�
         _tableView.dataSource = self;
         [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
         [_tableView registerClass:[HeighCustomCell class] forCellReuseIdentifier:CustomCellID];
-        
-        
     }
     return _tableView;
 }

@@ -38,6 +38,7 @@
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
 		AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADF1F0E37820013BD7F /* OMMainVC.m */; };
+		AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD83E1691F0F21F6009EECC5 /* CopyViewController.m */; };
 		ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */; };
 		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
 /* End PBXBuildFile section */
@@ -109,6 +110,8 @@
 		AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMConfigNetVC.m; sourceTree = "<group>"; };
 		AD6CEADE1F0E37820013BD7F /* OMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMainVC.h; sourceTree = "<group>"; };
 		AD6CEADF1F0E37820013BD7F /* OMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMMainVC.m; sourceTree = "<group>"; };
+		AD83E1681F0F21F6009EECC5 /* CopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
+		AD83E1691F0F21F6009EECC5 /* CopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		ADAACA141F0C76A2006FB73C /* HeighCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeighCustomCell.h; sourceTree = "<group>"; };
 		ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeighCustomCell.m; sourceTree = "<group>"; };
 		ADB7927B1F0B2FC200A8DEF5 /* HeighViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeighViewController.h; sourceTree = "<group>"; };
@@ -261,6 +264,7 @@
 			children = (
 				A714FA0D1E9E19CC007849EE /* 类别 */,
 				A714FA091E9DE4F2007849EE /* 打印、GDB */,
+				AD83E1671F0F21BF009EECC5 /* 复制粘贴 */,
 				ADB7927A1F0B2F9F00A8DEF5 /* 获取高度 */,
 				AD6CEADA1F0E35BF0013BD7F /* 选择环境 */,
 			);
@@ -317,6 +321,15 @@
 				AD6CEADF1F0E37820013BD7F /* OMMainVC.m */,
 			);
 			path = "选择环境";
+			sourceTree = "<group>";
+		};
+		AD83E1671F0F21BF009EECC5 /* 复制粘贴 */ = {
+			isa = PBXGroup;
+			children = (
+				AD83E1681F0F21F6009EECC5 /* CopyViewController.h */,
+				AD83E1691F0F21F6009EECC5 /* CopyViewController.m */,
+			);
+			path = "复制粘贴";
 			sourceTree = "<group>";
 		};
 		ADAACA131F0C767E006FB73C /* View */ = {
@@ -428,6 +441,7 @@
 				A714F9B61E9DDF40007849EE /* main.m in Sources */,
 				A714F9FC1E9DE044007849EE /* UIImage+Tool.m in Sources */,
 				A714FA001E9DE044007849EE /* MASConstraintMaker.m in Sources */,
+				AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */,
 				A714F9FF1E9DE044007849EE /* MASConstraint.m in Sources */,
 				A714FA051E9DE044007849EE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */,

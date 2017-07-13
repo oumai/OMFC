@@ -52,12 +52,12 @@
         case 2:
             string = @"测试";
             break;
-            //        case 3:
-            //            string = @"外网";
-            //            break;
-            //        case 4:
-            //            string = @"灰度";
-            //            break;
+        case 3:
+            string = @"外网";
+            break;
+        case 4:
+            string = @"灰度";
+            break;
         default:
             break;
     }

@@ -26,6 +26,7 @@
 #import "CategoryViewController.h"
 #import "HeighViewController.h"
 #import "OMConfigNetVC.h"
+#import "CopyViewController.h"
 /*
  ②
  */
@@ -89,7 +90,7 @@
     
     
     _rightTableSource = @[@{@"header":@"",
-                            @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"",@"ff"]},
+                            @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"CopyViewController",@"ff"]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -289,6 +290,12 @@
                     
                 }];
                 //[self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 4)
+            {
+                
+                CopyViewController *vc = [CopyViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
             }
             
         }

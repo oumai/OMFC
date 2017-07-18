@@ -36,11 +36,13 @@
 		A714FA0C1E9DE505007849EE /* GDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA0B1E9DE505007849EE /* GDBViewController.m */; };
 		A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA131E9E1CBB007849EE /* CategoryViewController.m */; };
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
+		AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */; };
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
 		AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADF1F0E37820013BD7F /* OMMainVC.m */; };
 		AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD83E1691F0F21F6009EECC5 /* CopyViewController.m */; };
 		ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */; };
 		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
+		ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,15 @@
 		A714FA131E9E1CBB007849EE /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		A714FA151E9E1DAC007849EE /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
 		A714FA161E9E1DAC007849EE /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
+		AD4694A21F1D9F03003C6137 /* ChoosePhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePhotoVC.h; sourceTree = "<group>"; };
+		AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePhotoVC.m; sourceTree = "<group>"; };
+		AD4694A61F1DA1C2003C6137 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AD4694A81F1DEEB9003C6137 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		AD4694AA1F1DEEC2003C6137 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		AD4694AC1F1E032B003C6137 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		AD4694AE1F1E034C003C6137 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD4694B01F1E0358003C6137 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AD4694B21F1E035E003C6137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AD6CEADB1F0E35FF0013BD7F /* OMConfigNetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMConfigNetVC.h; sourceTree = "<group>"; };
 		AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMConfigNetVC.m; sourceTree = "<group>"; };
 		AD6CEADE1F0E37820013BD7F /* OMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMainVC.h; sourceTree = "<group>"; };
@@ -120,6 +131,8 @@
 		ADB7927F1F0B325E00A8DEF5 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		ADB792801F0B325E00A8DEF5 /* KMCloudHealth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCloudHealth.h; sourceTree = "<group>"; };
 		ADB792811F0B325E00A8DEF5 /* KMHealthBAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHealthBAT.h; sourceTree = "<group>"; };
+		ADECE4261F17727D00A9123D /* VerifyIDCardNumberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyIDCardNumberVC.h; sourceTree = "<group>"; };
+		ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyIDCardNumberVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +160,7 @@
 			children = (
 				A714F9B31E9DDF40007849EE /* OMFC */,
 				A714F9B21E9DDF40007849EE /* Products */,
+				AD4694A51F1DA1C2003C6137 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,9 +277,11 @@
 			isa = PBXGroup;
 			children = (
 				A714FA0D1E9E19CC007849EE /* 类别 */,
+				AD4694A11F1D9EEC003C6137 /* 拍照 */,
 				A714FA091E9DE4F2007849EE /* 打印、GDB */,
 				AD83E1671F0F21BF009EECC5 /* 复制粘贴 */,
 				ADB7927A1F0B2F9F00A8DEF5 /* 获取高度 */,
+				ADECE4251F17725B00A9123D /* 身份证验 */,
 				AD6CEADA1F0E35BF0013BD7F /* 选择环境 */,
 			);
 			path = UIViewControllers;
@@ -312,6 +328,29 @@
 			path = "数组打印汉字";
 			sourceTree = "<group>";
 		};
+		AD4694A11F1D9EEC003C6137 /* 拍照 */ = {
+			isa = PBXGroup;
+			children = (
+				AD4694A21F1D9F03003C6137 /* ChoosePhotoVC.h */,
+				AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */,
+			);
+			path = "拍照";
+			sourceTree = "<group>";
+		};
+		AD4694A51F1DA1C2003C6137 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD4694B21F1E035E003C6137 /* Foundation.framework */,
+				AD4694B01F1E0358003C6137 /* CoreFoundation.framework */,
+				AD4694AE1F1E034C003C6137 /* UIKit.framework */,
+				AD4694AC1F1E032B003C6137 /* AVKit.framework */,
+				AD4694AA1F1DEEC2003C6137 /* PhotosUI.framework */,
+				AD4694A81F1DEEB9003C6137 /* Photos.framework */,
+				AD4694A61F1DA1C2003C6137 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD6CEADA1F0E35BF0013BD7F /* 选择环境 */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +388,15 @@
 				ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */,
 			);
 			path = "获取高度";
+			sourceTree = "<group>";
+		};
+		ADECE4251F17725B00A9123D /* 身份证验 */ = {
+			isa = PBXGroup;
+			children = (
+				ADECE4261F17727D00A9123D /* VerifyIDCardNumberVC.h */,
+				ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */,
+			);
+			path = "身份证验";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,11 +481,13 @@
 				A714F9FA1E9DE044007849EE /* UIButton+Tool.m in Sources */,
 				A714F9F81E9DE044007849EE /* NSString+SQTool.m in Sources */,
 				A70F47161EA06BB9003914CC /* NSString+Contain.m in Sources */,
+				AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */,
 				A714F9BC1E9DDF41007849EE /* ViewController.m in Sources */,
 				A714F9B91E9DDF41007849EE /* AppDelegate.m in Sources */,
 				A714FA021E9DE044007849EE /* MASViewAttribute.m in Sources */,
 				ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */,
 				A714F9FE1E9DE044007849EE /* MASCompositeConstraint.m in Sources */,
+				ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */,
 				A714F9B61E9DDF40007849EE /* main.m in Sources */,
 				A714F9FC1E9DE044007849EE /* UIImage+Tool.m in Sources */,
 				A714FA001E9DE044007849EE /* MASConstraintMaker.m in Sources */,

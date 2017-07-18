@@ -17,7 +17,6 @@
 
 #import "ViewController.h"
 
-
 /*
  ①
  所有控件
@@ -27,6 +26,8 @@
 #import "HeighViewController.h"
 #import "OMConfigNetVC.h"
 #import "CopyViewController.h"
+#import "VerifyIDCardNumberVC.h"
+#import "ChoosePhotoVC.h"
 /*
  ②
  */
@@ -90,7 +91,7 @@
     
     
     _rightTableSource = @[@{@"header":@"",
-                            @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"CopyViewController",@"ff"]},
+                            @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"CopyViewController",@"VerifyIDCardNumberVC",@"ChoosePhotoVC"]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -297,7 +298,17 @@
                 CopyViewController *vc = [CopyViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
-            
+            else if (indexPath.row == 5)
+            {
+                VerifyIDCardNumberVC *vc = [VerifyIDCardNumberVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 6)
+            {
+                ChoosePhotoVC *vc = [ChoosePhotoVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+
         }
         /*
          */

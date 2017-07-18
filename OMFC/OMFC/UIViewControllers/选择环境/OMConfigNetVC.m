@@ -27,7 +27,9 @@
 
 -(void)initView{
     for (int i = 0; i <=4 ; i++) {
-        UIButton *button = [[UIButton alloc]init];
+        
+        //为什么这里第一次创建了，颜色不会变白色。
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.tag = i+100;
         [button setTitle:[self setButtonTitle:button] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(changeHost:) forControlEvents:UIControlEventTouchUpInside];
@@ -73,9 +75,9 @@
     }
     [sender setBackgroundColor:kBuleColor];
     
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+//    [self dismissViewControllerAnimated:YES completion:^{
+//        
+//    }];
 }
 
 -(void)changeHost:(UIButton *)sender{

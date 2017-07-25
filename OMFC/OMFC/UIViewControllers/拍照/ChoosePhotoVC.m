@@ -8,8 +8,12 @@
 
 #import "ChoosePhotoVC.h"
 #import <AVFoundation/AVFoundation.h>
-@interface ChoosePhotoVC ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+#import "Tools.h"
+#import "SZImageView.h"
+@interface ChoosePhotoVC ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (nonatomic, strong) NSArray *array;
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIImageView *imageView;
 
 @end
@@ -19,23 +23,82 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     self.view.backgroundColor = [UIColor whiteColor];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100, 100, 100, 100);
-    button.backgroundColor = [UIColor cyanColor];
-    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    
+    [self configureUI];
+  
+}
+- (void)configureUI
+{
+    _array = @[@"第一种拍照",@"第二种拍照"];
+    [self.view addSubview:self.tableView];
     
     
     self.imageView = [[UIImageView alloc] init];
     self.imageView.frame = CGRectMake(200,200 , 100, 100);
     [self.view addSubview:self.imageView];
+    
+    [SZImageView shareImageView].imageBlock  = ^(UIImage *image){
+        self.imageView.image = image;
+    };
+
 }
 
-- (void)buttonClick
+- (UITableView *)tableView
 {
-    [self showAlertAction];
+    if (!_tableView) {
+        
+        _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+    }
+    return _tableView;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _array.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    static NSString *reuseIdentifer = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifer];
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifer];
+    }
+
+    cell.textLabel.text = _array[indexPath.row];
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if (indexPath.row == 0) {
+        
+        [self showAlertAction];
+
+    }
+    else if (indexPath.row == 1) {
+        
+        [[SZImageView shareImageView]getFrame:CGSizeMake(200, 300) viewController:self];
+
+    }
+}
+#pragma mark -------------------------------------------------------------------------------------------------第二种方法------------------------------------------------------------
+
+
+
+#pragma mark -------------------------------------------------------------------------------------------------第一种方法------------------------------------------------------------
+
+- (void)requestChangePersonHeadIcon:(UIImage *)img
+{
+    UIImage * compressImg  = [Tools compressImageWithImage:img ScalePercent:0.001];
+    NSData *imageData = UIImagePNGRepresentation(compressImg);
+    self.imageView.image = [UIImage imageWithData:imageData];
+
 }
 
 #pragma mark - UIImagePickerControllerDelegate
@@ -43,8 +106,9 @@
 {
     UIImage *image = [[info objectForKey:UIImagePickerControllerEditedImage] copy];
     
-    //[self requestChangePersonHeadIcon:image];
-    self.imageView.image = [UIImage imageWithData:image];
+    [self requestChangePersonHeadIcon:image];
+    
+  
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }

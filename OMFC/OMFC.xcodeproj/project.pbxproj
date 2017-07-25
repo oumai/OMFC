@@ -37,12 +37,15 @@
 		A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA131E9E1CBB007849EE /* CategoryViewController.m */; };
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
 		AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */; };
+		AD6549551F21A9D700336967 /* SZImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6549541F21A9D700336967 /* SZImageView.m */; };
+		AD6549571F21FDF500336967 /* SZImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6549561F21FDF500336967 /* SZImageView.xib */; };
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
 		AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADF1F0E37820013BD7F /* OMMainVC.m */; };
 		AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD83E1691F0F21F6009EECC5 /* CopyViewController.m */; };
 		ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */; };
 		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
 		ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */; };
+		ADF57ACA1F2043DA0081757F /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF57AC91F2043DA0081757F /* Tools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +120,9 @@
 		AD4694AE1F1E034C003C6137 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AD4694B01F1E0358003C6137 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		AD4694B21F1E035E003C6137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD6549531F21A9D700336967 /* SZImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageView.h; sourceTree = "<group>"; };
+		AD6549541F21A9D700336967 /* SZImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageView.m; sourceTree = "<group>"; };
+		AD6549561F21FDF500336967 /* SZImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZImageView.xib; sourceTree = "<group>"; };
 		AD6CEADB1F0E35FF0013BD7F /* OMConfigNetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMConfigNetVC.h; sourceTree = "<group>"; };
 		AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMConfigNetVC.m; sourceTree = "<group>"; };
 		AD6CEADE1F0E37820013BD7F /* OMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMainVC.h; sourceTree = "<group>"; };
@@ -133,6 +139,8 @@
 		ADB792811F0B325E00A8DEF5 /* KMHealthBAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHealthBAT.h; sourceTree = "<group>"; };
 		ADECE4261F17727D00A9123D /* VerifyIDCardNumberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyIDCardNumberVC.h; sourceTree = "<group>"; };
 		ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyIDCardNumberVC.m; sourceTree = "<group>"; };
+		ADF57AC81F2043DA0081757F /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		ADF57AC91F2043DA0081757F /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +214,7 @@
 		A714F9CC1E9DE044007849EE /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				ADF57AC71F203E990081757F /* Tools */,
 				A714F9CD1E9DE044007849EE /* Categary */,
 				A714F9DC1E9DE044007849EE /* Masonry */,
 				A714F9F41E9DE044007849EE /* TTTLabel */,
@@ -333,6 +342,7 @@
 			children = (
 				AD4694A21F1D9F03003C6137 /* ChoosePhotoVC.h */,
 				AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */,
+				AD6549521F21A9CA00336967 /* View */,
 			);
 			path = "拍照";
 			sourceTree = "<group>";
@@ -349,6 +359,16 @@
 				AD4694A61F1DA1C2003C6137 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD6549521F21A9CA00336967 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD6549531F21A9D700336967 /* SZImageView.h */,
+				AD6549541F21A9D700336967 /* SZImageView.m */,
+				AD6549561F21FDF500336967 /* SZImageView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AD6CEADA1F0E35BF0013BD7F /* 选择环境 */ = {
@@ -397,6 +417,15 @@
 				ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */,
 			);
 			path = "身份证验";
+			sourceTree = "<group>";
+		};
+		ADF57AC71F203E990081757F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				ADF57AC81F2043DA0081757F /* Tools.h */,
+				ADF57AC91F2043DA0081757F /* Tools.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,6 +490,7 @@
 				A714F9C41E9DDF41007849EE /* LaunchScreen.storyboard in Resources */,
 				A714F9C11E9DDF41007849EE /* Assets.xcassets in Resources */,
 				A714F9BF1E9DDF41007849EE /* Main.storyboard in Resources */,
+				AD6549571F21FDF500336967 /* SZImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,10 +508,12 @@
 				A70F47121EA067FD003914CC /* NSDictionary+Log.m in Sources */,
 				A714F9F71E9DE044007849EE /* NSAttributedString+ParagraphStyle.m in Sources */,
 				A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */,
+				AD6549551F21A9D700336967 /* SZImageView.m in Sources */,
 				A714F9FA1E9DE044007849EE /* UIButton+Tool.m in Sources */,
 				A714F9F81E9DE044007849EE /* NSString+SQTool.m in Sources */,
 				A70F47161EA06BB9003914CC /* NSString+Contain.m in Sources */,
 				AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */,
+				ADF57ACA1F2043DA0081757F /* Tools.m in Sources */,
 				A714F9BC1E9DDF41007849EE /* ViewController.m in Sources */,
 				A714F9B91E9DDF41007849EE /* AppDelegate.m in Sources */,
 				A714FA021E9DE044007849EE /* MASViewAttribute.m in Sources */,

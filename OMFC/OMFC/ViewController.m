@@ -121,7 +121,6 @@
     [self setupSomeParamars];
     
     
-    
 }
 //创建两个tableview
 - (void)setupSomeParamars
@@ -309,6 +308,7 @@
                 [self.navigationController pushViewController:vc animated:YES];
             }
 
+            
         }
         /*
          */

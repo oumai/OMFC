@@ -28,6 +28,8 @@
 #import "CopyViewController.h"
 #import "VerifyIDCardNumberVC.h"
 #import "ChoosePhotoVC.h"
+
+#import "SZImageView.h"
 /*
  ②
  */
@@ -120,6 +122,18 @@
     
     [self setupSomeParamars];
     
+    [NSRunLoop currentRunLoop];
+}
+
+- (void)run
+{
+    
+}
+- (void)runUntilDate:(NSDate *)limitDate
+{
+    
+}
+- (void)runMode:(NSString *)mode beforeDate:(NSDate *)limitDate{
     
 }
 //创建两个tableview

@@ -46,6 +46,7 @@
         }
     }
     
+    
     NSString *string = [mutableArray componentsJoinedByString:@""];
     return string;
 

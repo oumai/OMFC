@@ -23,21 +23,5 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OMFC/UIViewControllers/&#x7c7b;&#x522b;/CategoryViewController.m"
-            timestampString = "522213671.112015"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "-configureContain"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

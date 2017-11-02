@@ -41,6 +41,7 @@
 		AD6549571F21FDF500336967 /* SZImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6549561F21FDF500336967 /* SZImageView.xib */; };
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
 		AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADF1F0E37820013BD7F /* OMMainVC.m */; };
+		AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */; };
 		AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD83E1691F0F21F6009EECC5 /* CopyViewController.m */; };
 		ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */; };
 		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
@@ -127,6 +128,8 @@
 		AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMConfigNetVC.m; sourceTree = "<group>"; };
 		AD6CEADE1F0E37820013BD7F /* OMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMainVC.h; sourceTree = "<group>"; };
 		AD6CEADF1F0E37820013BD7F /* OMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMMainVC.m; sourceTree = "<group>"; };
+		AD7B28491FAB113400AAD898 /* NSArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayViewController.h; sourceTree = "<group>"; };
+		AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayViewController.m; sourceTree = "<group>"; };
 		AD83E1681F0F21F6009EECC5 /* CopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		AD83E1691F0F21F6009EECC5 /* CopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		ADAACA141F0C76A2006FB73C /* HeighCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeighCustomCell.h; sourceTree = "<group>"; };
@@ -285,6 +288,7 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD47B8011FA9A25300D1A5FA /* 数组 */,
 				A714FA0D1E9E19CC007849EE /* 类别 */,
 				AD4694A11F1D9EEC003C6137 /* 拍照 */,
 				A714FA091E9DE4F2007849EE /* 打印、GDB */,
@@ -359,6 +363,23 @@
 				AD4694A61F1DA1C2003C6137 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD47B8011FA9A25300D1A5FA /* 数组 */ = {
+			isa = PBXGroup;
+			children = (
+				AD47B8021FA9A2D400D1A5FA /* 数组筛选数字 */,
+			);
+			path = "数组";
+			sourceTree = "<group>";
+		};
+		AD47B8021FA9A2D400D1A5FA /* 数组筛选数字 */ = {
+			isa = PBXGroup;
+			children = (
+				AD7B28491FAB113400AAD898 /* NSArrayViewController.h */,
+				AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */,
+			);
+			path = "数组筛选数字";
 			sourceTree = "<group>";
 		};
 		AD6549521F21A9CA00336967 /* View */ = {
@@ -534,6 +555,7 @@
 				A714F9F91E9DE044007849EE /* UIButton+SQTool.m in Sources */,
 				ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */,
 				A714F9FB1E9DE044007849EE /* UIColor+HNExtensions.m in Sources */,
+				AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */,
 				A714FA031E9DE044007849EE /* MASViewConstraint.m in Sources */,
 				A714FA071E9DE044007849EE /* TTTAttributedLabel.m in Sources */,
 			);

@@ -28,12 +28,12 @@
 #import "CopyViewController.h"
 #import "VerifyIDCardNumberVC.h"
 #import "ChoosePhotoVC.h"
-
 #import "SZImageView.h"
+
 /*
  ②
  */
-
+#import "NSArrayViewController.h"
 
 /*
  ③
@@ -96,7 +96,7 @@
                             @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"CopyViewController",@"VerifyIDCardNumberVC",@"ChoosePhotoVC"]},
                           
                           @{@"header":@"",
-                            @"title":@[@"",@"",@"",@"",@"",@""]},
+                            @"title":@[@"NSArrayViewController",@"",@"",@"",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -330,6 +330,8 @@
         {
             if (indexPath.row == 0) {
               
+                NSArrayViewController *vc = [NSArrayViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
             }
             else if (indexPath.row == 1) {
                 
@@ -401,7 +403,7 @@
         NSIndexPath *moveToIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.row];
         //将右侧tableView移动到指定位置
         [_rightTableView selectRowAtIndexPath:moveToIndexPath animated:YES scrollPosition:UITableViewScrollPositionTop];
-        //取消选中效果
+        //取消选中效果；
         [_rightTableView deselectRowAtIndexPath:moveToIndexPath animated:YES];
         
     }

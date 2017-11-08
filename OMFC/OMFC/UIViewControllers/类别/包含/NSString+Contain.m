@@ -14,7 +14,7 @@
 - (BOOL)containsString:(NSString *)aString{
     
         //rangeOfString判断字符串A在字符串B中的位置，返回一个NSRange,如果B中不包含A，那么返回的range.location等于NSNotFound.
-    NSLog(@"自己写的判断");
+    //NSLog(@"自己写的判断");
     NSRange range = [self rangeOfString:aString];
     if (range.location == NSNotFound) {
             //不包含

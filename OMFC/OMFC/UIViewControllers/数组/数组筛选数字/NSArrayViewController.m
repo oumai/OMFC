@@ -7,7 +7,7 @@
 //
 
 #import "NSArrayViewController.h"
-
+#import "NSArray+Log.h"
 @interface NSArrayViewController ()
 @property (nonatomic, assign) BOOL isYes;
 @end
@@ -23,7 +23,7 @@
     
 
     [self thirdVoid]; //判断YES
-    
+    [self fouthVoid]; //打印  数组中的数字
     
    
 }
@@ -137,6 +137,20 @@
             NSLog(@"_isYes = %@",_isYes?@"YES":@"NO");
         }
     }
+}
+
+
+#pragma mark - Fouth
+
+- (void)fouthVoid
+{
+    
+    NSArray *array = @[@"欧博",@"刘诚",@"3",@2];
+    
+    [array descriptionWithLocale:array];
+    
+    NSLog(@"array = %@",array);
+
 }
 
 @end

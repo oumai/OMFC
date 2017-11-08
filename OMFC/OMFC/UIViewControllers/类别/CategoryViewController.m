@@ -124,6 +124,8 @@
 - (void)configureHans
 {
     NSArray *array = @[@"深圳",@"上海",@"北京",@"武汉",@"广州",@"重庆",@"天津",@"杭州"];
+    [array descriptionWithLocale:array];
+
     NSLog(@"array = %@",array);
     
     

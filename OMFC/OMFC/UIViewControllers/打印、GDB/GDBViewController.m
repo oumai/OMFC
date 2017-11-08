@@ -52,6 +52,8 @@
     CGRect frame = CGRectMake(10, 10, 10, 10);
     NSLog(@"%@", NSStringFromCGRect(frame));
 
+    //换行打印
+    NSLog(@"\n如果这就是爱情\n我也不会放弃");
     
     /*
      NSLog(@"%@",NSStringFromCGRect(pickerView.frame));

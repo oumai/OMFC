@@ -36,6 +36,7 @@
 		A714FA0C1E9DE505007849EE /* GDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA0B1E9DE505007849EE /* GDBViewController.m */; };
 		A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA131E9E1CBB007849EE /* CategoryViewController.m */; };
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
+		AD3318A51FB2B1E8005E3C29 /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3318A41FB2B1E7005E3C29 /* ZXPUnicode.m */; };
 		AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */; };
 		AD6549551F21A9D700336967 /* SZImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6549541F21A9D700336967 /* SZImageView.m */; };
 		AD6549571F21FDF500336967 /* SZImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6549561F21FDF500336967 /* SZImageView.xib */; };
@@ -112,6 +113,8 @@
 		A714FA131E9E1CBB007849EE /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		A714FA151E9E1DAC007849EE /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
 		A714FA161E9E1DAC007849EE /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
+		AD3318A31FB2B1E7005E3C29 /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
+		AD3318A41FB2B1E7005E3C29 /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
 		AD4694A21F1D9F03003C6137 /* ChoosePhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePhotoVC.h; sourceTree = "<group>"; };
 		AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePhotoVC.m; sourceTree = "<group>"; };
 		AD4694A61F1DA1C2003C6137 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -337,8 +340,18 @@
 				A70F470E1EA05B98003914CC /* NSArray+Log.m */,
 				A70F47101EA067FD003914CC /* NSDictionary+Log.h */,
 				A70F47111EA067FD003914CC /* NSDictionary+Log.m */,
+				AD3318A21FB2B1E7005E3C29 /* ZXPUnicode */,
 			);
 			path = "数组打印汉字";
+			sourceTree = "<group>";
+		};
+		AD3318A21FB2B1E7005E3C29 /* ZXPUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				AD3318A31FB2B1E7005E3C29 /* ZXPUnicode.h */,
+				AD3318A41FB2B1E7005E3C29 /* ZXPUnicode.m */,
+			);
+			path = ZXPUnicode;
 			sourceTree = "<group>";
 		};
 		AD4694A11F1D9EEC003C6137 /* 拍照 */ = {
@@ -555,6 +568,7 @@
 				A714F9F91E9DE044007849EE /* UIButton+SQTool.m in Sources */,
 				ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */,
 				A714F9FB1E9DE044007849EE /* UIColor+HNExtensions.m in Sources */,
+				AD3318A51FB2B1E8005E3C29 /* ZXPUnicode.m in Sources */,
 				AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */,
 				A714FA031E9DE044007849EE /* MASViewConstraint.m in Sources */,
 				A714FA071E9DE044007849EE /* TTTAttributedLabel.m in Sources */,

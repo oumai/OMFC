@@ -9,18 +9,18 @@
 #import "NSArray+Log.h"
 
 @implementation NSArray (Log)
-- (NSString *)descriptionWithLocale:(id)locale
-{
-    NSMutableString *strM = [NSMutableString string];
-    [strM appendString:@"(\n"];
-    
-    for (id obj in self) {
-        [strM appendFormat:@"\t%@,\n", obj];
-    }
-    [strM appendString:@")"];
-    return strM;
-
-}
+//- (NSString *)descriptionWithLocale:(id)locale
+//{
+//    NSMutableString *strM = [NSMutableString string];
+//    [strM appendString:@"(\n"];
+//
+//    for (id obj in self) {
+//        [strM appendFormat:@"\t%@,\n", obj];
+//    }
+//    [strM appendString:@")"];
+//    return strM;
+//
+//}
 
 //- (NSString *)descriptionWithLocale:(id)locale
 //{
@@ -44,4 +44,27 @@
 //    
 //    return string;
 //}
+
+
+/**
+ 解决数组输出中文乱码的问题
+ 
+ @return 输出结果
+ */
+- (NSString *)descriptionWithLocale:(id)locale {
+    
+    NSMutableString *string = [NSMutableString stringWithString:@"(\n"];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        [string appendFormat:@"\t%@,\n", obj];
+    }];
+    if ([string hasSuffix:@",\n"]) {
+        
+        [string deleteCharactersInRange:NSMakeRange(string.length - 2, 1)]; // 删除最后一个逗号
+    }
+    [string appendString:@")\n"];
+    
+    return string;
+}
+
 @end

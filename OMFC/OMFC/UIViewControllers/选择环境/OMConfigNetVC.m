@@ -75,9 +75,9 @@
     }
     [sender setBackgroundColor:kBuleColor];
     
-//    [self dismissViewControllerAnimated:YES completion:^{
-//        
-//    }];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 -(void)changeHost:(UIButton *)sender{
@@ -86,6 +86,13 @@
     NSLog(@"%ld",(long)[[NSUserDefaults standardUserDefaults]integerForKey:@"HOST"]);
     [self setButtonBackColor:sender];
 }
+
+
+- (void)viewLayoutMarginsDidChange
+{
+    
+}
+
 
 
 @end

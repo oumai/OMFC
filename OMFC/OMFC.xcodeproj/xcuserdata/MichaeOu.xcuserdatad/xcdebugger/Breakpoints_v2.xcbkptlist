@@ -39,53 +39,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OMFC/UIViewControllers/&#x7c7b;&#x522b;/&#x6570;&#x7ec4;&#x6253;&#x5370;&#x6c49;&#x5b57;/ZXPUnicode/ZXPUnicode.m"
-            timestampString = "533099138.030585"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "+load"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[NSDictionary(ZXPUnicode) load]"
-                  moduleName = "OMFC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xinhuakangmei/OMFC/OMFC/OMFC/UIViewControllers/%E7%B1%BB%E5%88%AB/%E6%95%B0%E7%BB%84%E6%89%93%E5%8D%B0%E6%B1%89%E5%AD%97/ZXPUnicode/ZXPUnicode.m"
-                  timestampString = "533454112.90327"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32+[NSDictionary(ZXPUnicode) load]_block_invoke"
-                  moduleName = "OMFC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xinhuakangmei/OMFC/OMFC/OMFC/UIViewControllers/%E7%B1%BB%E5%88%AB/%E6%95%B0%E7%BB%84%E6%89%93%E5%8D%B0%E6%B1%89%E5%AD%97/ZXPUnicode/ZXPUnicode.m"
-                  timestampString = "533454112.90455"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

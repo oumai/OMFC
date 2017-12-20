@@ -38,7 +38,7 @@
 /*
  ③
  */
-
+#import "HardWareViewController.h"
 
 /*
  ④
@@ -98,7 +98,7 @@
                           @{@"header":@"",
                             @"title":@[@"NSArrayViewController",@"",@"",@"",@"",@""]},
                           
-                          @{@"header":@"",
+                          @{@"header":@"硬件",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
                           
                           @{@"header":@"",
@@ -336,6 +336,7 @@
             else if (indexPath.row == 1) {
                 
                 
+                
             }
             else if (indexPath.row == 2) {
                          }
@@ -360,7 +361,9 @@
         {
             if (indexPath.row == 0) {
                 
-                        }
+                HardWareViewController *vc = [HardWareViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
             
         }
         /*

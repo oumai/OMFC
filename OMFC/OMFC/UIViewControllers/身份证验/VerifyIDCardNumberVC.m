@@ -30,6 +30,7 @@
                     @"刘诚":@"421087199203022143"};
     
     _textField = [[UITextField alloc] init];
+    _textField.text = @"子丑寅卯辰巳，午未申酉戌亥";
     _textField.frame = CGRectMake(100, 100, 200, 60);
     _textField.borderStyle = UITextBorderStyleRoundedRect;
     _textField.text = _dictionary[@"欧博"];

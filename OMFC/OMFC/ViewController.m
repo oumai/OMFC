@@ -21,14 +21,15 @@
  ①
  所有控件
  */
-#import "GDBViewController.h"
-#import "CategoryViewController.h"
-#import "HeighViewController.h"
-#import "OMConfigNetVC.h"
-#import "CopyViewController.h"
-#import "VerifyIDCardNumberVC.h"
-#import "ChoosePhotoVC.h"
-#import "SZImageView.h"
+#import "GDBViewController.h"     //GCD测试.
+#import "CategoryViewController.h"//类别
+#import "HeighViewController.h"  // 高度
+#import "OMConfigNetVC.h"        //切换环境
+#import "CopyViewController.h"  // 复制之后进入页面之后自动识别复制的内容
+#import "VerifyIDCardNumberVC.h"//验证身份证号码 是否正确
+#import "ChoosePhotoVC.h"      //选择照片
+#import "SZImageView.h"        //放大缩小图片
+#import "URLViewConrtroller.h" //url页面
 
 /*
  ②
@@ -76,7 +77,16 @@
 @end
 
 @implementation ViewController
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [self prefersStatusBarHidden];
+}
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -96,7 +106,7 @@
                             @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"CopyViewController",@"VerifyIDCardNumberVC",@"ChoosePhotoVC"]},
                           
                           @{@"header":@"",
-                            @"title":@[@"NSArrayViewController",@"",@"",@"",@"",@""]},
+                            @"title":@[@"NSArrayViewController",@"URL",@"",@"",@"",@""]},
                           
                           @{@"header":@"硬件",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -335,7 +345,8 @@
             }
             else if (indexPath.row == 1) {
                 
-                
+                URLViewConrtroller *vc = [URLViewConrtroller new];
+                [self.navigationController pushViewController:vc animated:YES];
                 
             }
             else if (indexPath.row == 2) {
@@ -362,6 +373,7 @@
             if (indexPath.row == 0) {
                 
                 HardWareViewController *vc = [HardWareViewController new];
+                vc.hidesBottomBarWhenPushed = YES;
                 [self.navigationController pushViewController:vc animated:YES];
             }
             

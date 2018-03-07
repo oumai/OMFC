@@ -16,7 +16,7 @@
 #import "KMHealthBAT.h"
 #import "KMCloudHealth.h"
 #import "AngelDoctor.h"
-
+#import "WeakDefine.h"
 //#define MAS_SHORTHAND
 //#define MAS_SHORTHAND_GLOBALS
 //

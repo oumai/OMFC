@@ -45,6 +45,8 @@
 		AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */; };
 		AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD83E1691F0F21F6009EECC5 /* CopyViewController.m */; };
 		AD9502031FE3A099002281D5 /* HardWareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9502021FE3A099002281D5 /* HardWareViewController.m */; };
+		AD95AE21204D133F0016C397 /* URLViewConrtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95AE20204D133F0016C397 /* URLViewConrtroller.m */; };
+		AD967DC2204F8BAC00560872 /* OMJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD967DC1204F8BAB00560872 /* OMJSObject.m */; };
 		ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */; };
 		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
 		ADC1C4D21FC6735400FA61D3 /* TRY.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC1C4D11FC6735400FA61D3 /* TRY.m */; };
@@ -139,6 +141,11 @@
 		AD83E1691F0F21F6009EECC5 /* CopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		AD9502011FE3A099002281D5 /* HardWareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HardWareViewController.h; sourceTree = "<group>"; };
 		AD9502021FE3A099002281D5 /* HardWareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HardWareViewController.m; sourceTree = "<group>"; };
+		AD95AE1F204D133F0016C397 /* URLViewConrtroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLViewConrtroller.h; sourceTree = "<group>"; };
+		AD95AE20204D133F0016C397 /* URLViewConrtroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLViewConrtroller.m; sourceTree = "<group>"; };
+		AD967DC0204F8BAB00560872 /* OMJSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMJSObject.h; sourceTree = "<group>"; };
+		AD967DC1204F8BAB00560872 /* OMJSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMJSObject.m; sourceTree = "<group>"; };
+		AD967DC3204F8CA600560872 /* WeakDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakDefine.h; sourceTree = "<group>"; };
 		ADAACA141F0C76A2006FB73C /* HeighCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeighCustomCell.h; sourceTree = "<group>"; };
 		ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeighCustomCell.m; sourceTree = "<group>"; };
 		ADB7927B1F0B2FC200A8DEF5 /* HeighViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeighViewController.h; sourceTree = "<group>"; };
@@ -219,6 +226,7 @@
 				ADB7927F1F0B325E00A8DEF5 /* Header.h */,
 				ADB792801F0B325E00A8DEF5 /* KMCloudHealth.h */,
 				ADB792811F0B325E00A8DEF5 /* KMHealthBAT.h */,
+				AD967DC3204F8CA600560872 /* WeakDefine.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -297,6 +305,7 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD95AE1E204D131B0016C397 /* URL页面 */,
 				AD47B8011FA9A25300D1A5FA /* 数组 */,
 				A714FA0D1E9E19CC007849EE /* 类别 */,
 				AD4694A11F1D9EEC003C6137 /* 拍照 */,
@@ -443,6 +452,25 @@
 			path = "硬件";
 			sourceTree = "<group>";
 		};
+		AD95AE1E204D131B0016C397 /* URL页面 */ = {
+			isa = PBXGroup;
+			children = (
+				AD967DBF204F8BAB00560872 /* JSProtocol */,
+				AD95AE1F204D133F0016C397 /* URLViewConrtroller.h */,
+				AD95AE20204D133F0016C397 /* URLViewConrtroller.m */,
+			);
+			path = "URL页面";
+			sourceTree = "<group>";
+		};
+		AD967DBF204F8BAB00560872 /* JSProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				AD967DC0204F8BAB00560872 /* OMJSObject.h */,
+				AD967DC1204F8BAB00560872 /* OMJSObject.m */,
+			);
+			path = JSProtocol;
+			sourceTree = "<group>";
+		};
 		ADAACA131F0C767E006FB73C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +604,7 @@
 				ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */,
 				A714F9B61E9DDF40007849EE /* main.m in Sources */,
 				A714F9FC1E9DE044007849EE /* UIImage+Tool.m in Sources */,
+				AD967DC2204F8BAC00560872 /* OMJSObject.m in Sources */,
 				A714FA001E9DE044007849EE /* MASConstraintMaker.m in Sources */,
 				AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */,
 				A714F9FF1E9DE044007849EE /* MASConstraint.m in Sources */,
@@ -589,6 +618,7 @@
 				A714F9F91E9DE044007849EE /* UIButton+SQTool.m in Sources */,
 				ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */,
 				A714F9FB1E9DE044007849EE /* UIColor+HNExtensions.m in Sources */,
+				AD95AE21204D133F0016C397 /* URLViewConrtroller.m in Sources */,
 				AD3318A51FB2B1E8005E3C29 /* ZXPUnicode.m in Sources */,
 				AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */,
 				A714FA031E9DE044007849EE /* MASViewConstraint.m in Sources */,

@@ -51,6 +51,7 @@
 		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
 		ADC1C4D21FC6735400FA61D3 /* TRY.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC1C4D11FC6735400FA61D3 /* TRY.m */; };
 		ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */; };
+		ADF5476120721D9B00ACCDF5 /* OMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5476020721D9B00ACCDF5 /* OMManager.m */; };
 		ADF57ACA1F2043DA0081757F /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF57AC91F2043DA0081757F /* Tools.m */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +159,9 @@
 		ADC1C4D11FC6735400FA61D3 /* TRY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRY.m; sourceTree = "<group>"; };
 		ADECE4261F17727D00A9123D /* VerifyIDCardNumberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyIDCardNumberVC.h; sourceTree = "<group>"; };
 		ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyIDCardNumberVC.m; sourceTree = "<group>"; };
+		ADF5475D20721C9400ACCDF5 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		ADF5475F20721D9B00ACCDF5 /* OMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMManager.h; sourceTree = "<group>"; };
+		ADF5476020721D9B00ACCDF5 /* OMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMManager.m; sourceTree = "<group>"; };
 		ADF57AC81F2043DA0081757F /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		ADF57AC91F2043DA0081757F /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +226,7 @@
 			children = (
 				A714F9B51E9DDF40007849EE /* main.m */,
 				A714F9CB1E9DDFD6007849EE /* FCPrefixHeader.pch */,
+				ADF5475D20721C9400ACCDF5 /* Singleton.h */,
 				ADB7927E1F0B325E00A8DEF5 /* AngelDoctor.h */,
 				ADB7927F1F0B325E00A8DEF5 /* Header.h */,
 				ADB792801F0B325E00A8DEF5 /* KMCloudHealth.h */,
@@ -314,6 +319,7 @@
 				ADB7927A1F0B2F9F00A8DEF5 /* 获取高度 */,
 				ADECE4251F17725B00A9123D /* 身份证验 */,
 				AD6CEADA1F0E35BF0013BD7F /* 选择环境 */,
+				ADF5475E20721D5400ACCDF5 /* 单例 */,
 				AD9501FE1FE39F6B002281D5 /* 硬件 */,
 			);
 			path = UIViewControllers;
@@ -499,6 +505,15 @@
 			path = "身份证验";
 			sourceTree = "<group>";
 		};
+		ADF5475E20721D5400ACCDF5 /* 单例 */ = {
+			isa = PBXGroup;
+			children = (
+				ADF5475F20721D9B00ACCDF5 /* OMManager.h */,
+				ADF5476020721D9B00ACCDF5 /* OMManager.m */,
+			);
+			path = "单例";
+			sourceTree = "<group>";
+		};
 		ADF57AC71F203E990081757F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +628,7 @@
 				A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */,
 				A714FA011E9DE044007849EE /* MASLayoutConstraint.m in Sources */,
 				A714FA041E9DE044007849EE /* NSArray+MASAdditions.m in Sources */,
+				ADF5476120721D9B00ACCDF5 /* OMManager.m in Sources */,
 				AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */,
 				A714F9FD1E9DE044007849EE /* UILabel+Siman.m in Sources */,
 				A714F9F91E9DE044007849EE /* UIButton+SQTool.m in Sources */,

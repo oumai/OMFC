@@ -64,7 +64,7 @@
 /*
  ⑧
  */
-
+#import "OMManager.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *_rightTableView;
@@ -90,6 +90,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+   
     
     _leftTableSource = @[@"",
                          @"",

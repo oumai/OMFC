@@ -17,6 +17,7 @@
 #import "KMCloudHealth.h"
 #import "AngelDoctor.h"
 #import "WeakDefine.h"
+#import "Singleton.h" //单例类
 //#define MAS_SHORTHAND
 //#define MAS_SHORTHAND_GLOBALS
 //

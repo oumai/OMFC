@@ -53,10 +53,14 @@
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
+    
+    
+    
     self.context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     
     OMJSObject *jsObject = [[OMJSObject alloc] init];
-    self.context[@"HealthBAT"] = jsObject;
+    self.context[@"HealthBAT"] = jsObject;  //HealthBAT是约定传的参数.
+    
     
     WEAK_SELF(self);
     //返回首页
@@ -134,23 +138,17 @@
         NSString *timestamp = [Tools getDateStringWithDate:[NSDate date] Format:@"yyyy-MM-dd HH:mm:ss"];//当前日期
         NSString *phone = @"17688715132";//person.Data.PhoneNumber;//手机号
         
+        //加密.
         NSArray *array = @[appkey,appSecret,timestamp];
-        
         array = [array sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
             return [obj1 compare:obj2];
         }];
-        
         NSString *tmpSign = @"";
         for (NSString *string in array) {
             tmpSign = [tmpSign stringByAppendingString:string];
         }
-        
         NSString *sign = [Tools md5String:tmpSign];
-        
         NSString *url = [NSString stringWithFormat:@"%@?appkey=%@&timestamp=%@&sign=%@&phone=%@&src=2",KM_HEALTH360_URL,appkey,timestamp,sign,phone];
-        
-        
-        
         url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         
         

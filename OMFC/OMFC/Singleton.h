@@ -38,8 +38,11 @@ static class *_instance;\
 - (id)copyWithZone:(NSZone *)zone\
 {\
     return _instance;\
+}\
+- (id)mutableCopyWithZone:(NSZone *)zone\
+{\
+    return _instance;\
 }
-
 
 #else
 #define singletonImplemention(class)\

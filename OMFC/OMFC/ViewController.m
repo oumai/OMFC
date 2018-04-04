@@ -35,12 +35,14 @@
  ②
  */
 #import "NSArrayViewController.h"
+#import "NSArrayVC.h"
 
 /*
  ③
  */
 #import "HardWareViewController.h"
-
+#import "SinletonViewController.h" //单列
+#import "LifeCycleViewController.h" //生命周期
 /*
  ④
  
@@ -64,7 +66,6 @@
 /*
  ⑧
  */
-#import "OMManager.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *_rightTableView;
@@ -91,6 +92,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+   
     
    
     
@@ -109,10 +111,10 @@
                             @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"CopyViewController",@"VerifyIDCardNumberVC",@"ChoosePhotoVC"]},
                           
                           @{@"header":@"",
-                            @"title":@[@"NSArrayViewController",@"URL",@"",@"",@"",@""]},
+                            @"title":@[@"NSArrayViewController",@"NSArray和NSString",@"",@"",@"",@""]},
                           
-                          @{@"header":@"硬件",
-                            @"title":@[@"",@"",@"",@"",@"",@""]},
+                          @{@"header":@"",
+                            @"title":@[@"URL",@"singleton",@"生命周期",@"",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -130,25 +132,180 @@
                             @"title":@[@"",@"",@"",@"",@"",@""]}
                           
                           ];
-    
-    
-    
     [self setupSomeParamars];
     
-    [NSRunLoop currentRunLoop];
 }
 
-- (void)run
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-}
-- (void)runUntilDate:(NSDate *)limitDate
-{
+    if (_rightTableView == tableView) {
+        /**/
+        if (indexPath.section == 0) {
+            
+            if (indexPath.row == 0) {
+                //GDB及打印
+                GDBViewController *vc = [[GDBViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+
+            }
+            else if (indexPath.row == 1) {
+                
+                //category(筛选数字)
+                CategoryViewController *vc = [[CategoryViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+
+            }
+            else if (indexPath.row == 2)
+            {
+                HeighViewController *vc = [HeighViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 3)
+            {
+                OMConfigNetVC *vc = [OMConfigNetVC new];
+                [self presentViewController:vc animated:YES completion:^{
+                    
+                }];
+                //[self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 4)
+            {
+                
+                CopyViewController *vc = [CopyViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 5)
+            {
+                VerifyIDCardNumberVC *vc = [VerifyIDCardNumberVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 6)
+            {
+                ChoosePhotoVC *vc = [ChoosePhotoVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+
+            
+        }
+        /*
+         */
+        else if (indexPath.section == 1)
+        {
+            if (indexPath.row == 0) {
+              
+                NSArrayViewController *vc = [NSArrayViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 1) {
+                
+                NSArrayVC *vc = [NSArrayVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 2) {
+                         }
+            else if (indexPath.row == 3)
+            {
+                       }
+            else if (indexPath.row == 4)
+            {
+                
+                
+            }
+            else if (indexPath.row == 5)
+            {
+                
+            }
+            
+        }
+        /*
+         */
+        
+        else if (indexPath.section == 2)
+        {
+            if (indexPath.row == 0) {
+                URLViewConrtroller *vc = [URLViewConrtroller new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 1)
+            {
+                SinletonViewController *vc = [SinletonViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 2)
+            {
+                LifeCycleViewController *vc = [LifeCycleViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            
+        }
+        /*
+         UICollectionViews
+         */
+        else if (indexPath.section == 3)
+        {
+            if (indexPath.row == 0) {
+                          }
+            if (indexPath.row ==  1) {
+                          }
+        }
+        /*弹框*/
+        else if (indexPath.section == 4)
+        {
+             }
+        
+        /*手势*/
+        else if (indexPath.section == 5)
+        {
+            
+        }
+        /*渐变*/
+        
+        else if (indexPath.section == 6)
+        {
+            
+            
+        }
+        else if (indexPath.section == 7)
+        {
+            
+            
+        }
+        
+    }
+    else if (tableView == _leftTableView)
+    {
+        //计算出右侧tableView将要滚动的位置
+        NSIndexPath *moveToIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.row];
+        //将右侧tableView移动到指定位置
+        [_rightTableView selectRowAtIndexPath:moveToIndexPath animated:YES scrollPosition:UITableViewScrollPositionTop];
+        //取消选中效果；
+        [_rightTableView deselectRowAtIndexPath:moveToIndexPath animated:YES];
+        
+    }
     
 }
-- (void)runMode:(NSString *)mode beforeDate:(NSDate *)limitDate{
+
+
+//MARK: - 一个方法就能搞定 右边滑动时跟左边的联动
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    // 如果是 左侧的 tableView 直接return
+    if (scrollView == _leftTableView) return;
+    
+    // 取出显示在 视图 且最靠上 的 cell 的 indexPath
+    NSIndexPath *topHeaderViewIndexpath = [[_rightTableView indexPathsForVisibleRows] firstObject];
+    
+    // 左侧 talbelView 移动的 indexPath
+    NSIndexPath *moveToIndexpath = [NSIndexPath indexPathForRow:topHeaderViewIndexpath.section inSection:0];
+    
+    // 移动 左侧 tableView 到 指定 indexPath 居中显示
+    [_leftTableView selectRowAtIndexPath:moveToIndexpath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
     
 }
+
+
 //创建两个tableview
 - (void)setupSomeParamars
 {
@@ -252,7 +409,6 @@
         return nil;
     }
 }
-
 /*
  联动效果在于这里
  这个方法不准确
@@ -263,172 +419,4 @@
 //        [_leftTableView selectRowAtIndexPath:[NSIndexPath indexPathForItem:section inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
 //    }
 //}
-
-
-//MARK: - 一个方法就能搞定 右边滑动时跟左边的联动
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-    // 如果是 左侧的 tableView 直接return
-    if (scrollView == _leftTableView) return;
-    
-    // 取出显示在 视图 且最靠上 的 cell 的 indexPath
-    NSIndexPath *topHeaderViewIndexpath = [[_rightTableView indexPathsForVisibleRows] firstObject];
-    
-    // 左侧 talbelView 移动的 indexPath
-    NSIndexPath *moveToIndexpath = [NSIndexPath indexPathForRow:topHeaderViewIndexpath.section inSection:0];
-    
-    // 移动 左侧 tableView 到 指定 indexPath 居中显示
-    [_leftTableView selectRowAtIndexPath:moveToIndexpath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-    
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    
-    
-    
-    if (_rightTableView == tableView) {
-        /**/
-        if (indexPath.section == 0) {
-            
-            if (indexPath.row == 0) {
-                //GDB及打印
-                GDBViewController *vc = [[GDBViewController alloc] init];
-                [self.navigationController pushViewController:vc animated:YES];
-
-            }
-            else if (indexPath.row == 1) {
-                
-                //category(筛选数字)
-                CategoryViewController *vc = [[CategoryViewController alloc] init];
-                [self.navigationController pushViewController:vc animated:YES];
-
-            }
-            else if (indexPath.row == 2)
-            {
-                HeighViewController *vc = [HeighViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-            else if (indexPath.row == 3)
-            {
-                OMConfigNetVC *vc = [OMConfigNetVC new];
-                [self presentViewController:vc animated:YES completion:^{
-                    
-                }];
-                //[self.navigationController pushViewController:vc animated:YES];
-            }
-            else if (indexPath.row == 4)
-            {
-                
-                CopyViewController *vc = [CopyViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-            else if (indexPath.row == 5)
-            {
-                VerifyIDCardNumberVC *vc = [VerifyIDCardNumberVC new];
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-            else if (indexPath.row == 6)
-            {
-                ChoosePhotoVC *vc = [ChoosePhotoVC new];
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-
-            
-        }
-        /*
-         */
-        else if (indexPath.section == 1)
-        {
-            if (indexPath.row == 0) {
-              
-                NSArrayViewController *vc = [NSArrayViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-            else if (indexPath.row == 1) {
-                
-                URLViewConrtroller *vc = [URLViewConrtroller new];
-                [self.navigationController pushViewController:vc animated:YES];
-                
-            }
-            else if (indexPath.row == 2) {
-                         }
-            else if (indexPath.row == 3)
-            {
-                       }
-            else if (indexPath.row == 4)
-            {
-                
-                
-            }
-            else if (indexPath.row == 5)
-            {
-                
-            }
-            
-        }
-        /*
-         */
-        
-        else if (indexPath.section == 2)
-        {
-            if (indexPath.row == 0) {
-                
-                HardWareViewController *vc = [HardWareViewController new];
-                vc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:vc animated:YES];
-            }
-            
-        }
-        /*
-         UICollectionViews
-         */
-        else if (indexPath.section == 3)
-        {
-            if (indexPath.row == 0) {
-                          }
-            if (indexPath.row ==  1) {
-                          }
-        }
-        /*弹框*/
-        else if (indexPath.section == 4)
-        {
-             }
-        
-        /*手势*/
-        else if (indexPath.section == 5)
-        {
-            
-        }
-        /*渐变*/
-        
-        else if (indexPath.section == 6)
-        {
-            
-            
-        }
-        else if (indexPath.section == 7)
-        {
-            
-            
-        }
-        
-    }
-    else if (tableView == _leftTableView)
-    {
-        //计算出右侧tableView将要滚动的位置
-        NSIndexPath *moveToIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.row];
-        //将右侧tableView移动到指定位置
-        [_rightTableView selectRowAtIndexPath:moveToIndexPath animated:YES scrollPosition:UITableViewScrollPositionTop];
-        //取消选中效果；
-        [_rightTableView deselectRowAtIndexPath:moveToIndexPath animated:YES];
-        
-    }
-    
-}
-
-
-
-
 @end

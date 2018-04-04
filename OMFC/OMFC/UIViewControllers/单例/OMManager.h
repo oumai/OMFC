@@ -10,8 +10,13 @@
 
 @interface OMManager : NSObject
 
+
 //+ (instancetype)shareInstance;
 
+
+
 singletonInterface(OMManager)
+
+
 
 @end

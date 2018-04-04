@@ -28,7 +28,7 @@
 
 - (void)buttonClick
 {
-    
+    //让手机震动
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
    
 }

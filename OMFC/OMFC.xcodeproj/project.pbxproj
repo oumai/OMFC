@@ -38,6 +38,10 @@
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
 		AD3318A51FB2B1E8005E3C29 /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3318A41FB2B1E7005E3C29 /* ZXPUnicode.m */; };
 		AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */; };
+		AD53331C2074578900AB63A8 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD53331B2074578900AB63A8 /* LifeCycleViewController.m */; };
+		AD57E7FB20730D350083E5EF /* SinletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD57E7FA20730D350083E5EF /* SinletonViewController.m */; };
+		AD57E7FF207357440083E5EF /* NSArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD57E7FE207357440083E5EF /* NSArrayVC.m */; };
+		AD57E802207384BD0083E5EF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD57E801207384BD0083E5EF /* Person.m */; };
 		AD6549551F21A9D700336967 /* SZImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6549541F21A9D700336967 /* SZImageView.m */; };
 		AD6549571F21FDF500336967 /* SZImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6549561F21FDF500336967 /* SZImageView.xib */; };
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
@@ -129,6 +133,14 @@
 		AD4694AE1F1E034C003C6137 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AD4694B01F1E0358003C6137 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		AD4694B21F1E035E003C6137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD53331A2074578900AB63A8 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
+		AD53331B2074578900AB63A8 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
+		AD57E7F920730D350083E5EF /* SinletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinletonViewController.h; sourceTree = "<group>"; };
+		AD57E7FA20730D350083E5EF /* SinletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinletonViewController.m; sourceTree = "<group>"; };
+		AD57E7FD207357440083E5EF /* NSArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayVC.h; sourceTree = "<group>"; };
+		AD57E7FE207357440083E5EF /* NSArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayVC.m; sourceTree = "<group>"; };
+		AD57E800207384BD0083E5EF /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AD57E801207384BD0083E5EF /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		AD6549531F21A9D700336967 /* SZImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZImageView.h; sourceTree = "<group>"; };
 		AD6549541F21A9D700336967 /* SZImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZImageView.m; sourceTree = "<group>"; };
 		AD6549561F21FDF500336967 /* SZImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZImageView.xib; sourceTree = "<group>"; };
@@ -320,6 +332,7 @@
 				ADECE4251F17725B00A9123D /* 身份证验 */,
 				AD6CEADA1F0E35BF0013BD7F /* 选择环境 */,
 				ADF5475E20721D5400ACCDF5 /* 单例 */,
+				AD5333192074576A00AB63A8 /* 生命周期 */,
 				AD9501FE1FE39F6B002281D5 /* 硬件 */,
 			);
 			path = UIViewControllers;
@@ -403,6 +416,7 @@
 		AD47B8011FA9A25300D1A5FA /* 数组 */ = {
 			isa = PBXGroup;
 			children = (
+				AD57E7FC2073570D0083E5EF /* NSArray和NSString */,
 				AD47B8021FA9A2D400D1A5FA /* 数组筛选数字 */,
 			);
 			path = "数组";
@@ -415,6 +429,26 @@
 				AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */,
 			);
 			path = "数组筛选数字";
+			sourceTree = "<group>";
+		};
+		AD5333192074576A00AB63A8 /* 生命周期 */ = {
+			isa = PBXGroup;
+			children = (
+				AD53331A2074578900AB63A8 /* LifeCycleViewController.h */,
+				AD53331B2074578900AB63A8 /* LifeCycleViewController.m */,
+			);
+			path = "生命周期";
+			sourceTree = "<group>";
+		};
+		AD57E7FC2073570D0083E5EF /* NSArray和NSString */ = {
+			isa = PBXGroup;
+			children = (
+				AD57E7FD207357440083E5EF /* NSArrayVC.h */,
+				AD57E7FE207357440083E5EF /* NSArrayVC.m */,
+				AD57E800207384BD0083E5EF /* Person.h */,
+				AD57E801207384BD0083E5EF /* Person.m */,
+			);
+			path = "NSArray和NSString";
 			sourceTree = "<group>";
 		};
 		AD6549521F21A9CA00336967 /* View */ = {
@@ -510,6 +544,8 @@
 			children = (
 				ADF5475F20721D9B00ACCDF5 /* OMManager.h */,
 				ADF5476020721D9B00ACCDF5 /* OMManager.m */,
+				AD57E7F920730D350083E5EF /* SinletonViewController.h */,
+				AD57E7FA20730D350083E5EF /* SinletonViewController.m */,
 			);
 			path = "单例";
 			sourceTree = "<group>";
@@ -597,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD57E7FB20730D350083E5EF /* SinletonViewController.m in Sources */,
 				A70F470F1EA05B98003914CC /* NSArray+Log.m in Sources */,
 				A714FA061E9DE044007849EE /* View+MASAdditions.m in Sources */,
 				AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */,
@@ -611,6 +648,7 @@
 				ADC1C4D21FC6735400FA61D3 /* TRY.m in Sources */,
 				AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */,
 				ADF57ACA1F2043DA0081757F /* Tools.m in Sources */,
+				AD57E7FF207357440083E5EF /* NSArrayVC.m in Sources */,
 				A714F9BC1E9DDF41007849EE /* ViewController.m in Sources */,
 				A714F9B91E9DDF41007849EE /* AppDelegate.m in Sources */,
 				A714FA021E9DE044007849EE /* MASViewAttribute.m in Sources */,
@@ -624,6 +662,7 @@
 				AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */,
 				A714F9FF1E9DE044007849EE /* MASConstraint.m in Sources */,
 				A714FA051E9DE044007849EE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				AD53331C2074578900AB63A8 /* LifeCycleViewController.m in Sources */,
 				AD9502031FE3A099002281D5 /* HardWareViewController.m in Sources */,
 				A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */,
 				A714FA011E9DE044007849EE /* MASLayoutConstraint.m in Sources */,
@@ -637,6 +676,7 @@
 				AD95AE21204D133F0016C397 /* URLViewConrtroller.m in Sources */,
 				AD3318A51FB2B1E8005E3C29 /* ZXPUnicode.m in Sources */,
 				AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */,
+				AD57E802207384BD0083E5EF /* Person.m in Sources */,
 				A714FA031E9DE044007849EE /* MASViewConstraint.m in Sources */,
 				A714FA071E9DE044007849EE /* TTTAttributedLabel.m in Sources */,
 			);

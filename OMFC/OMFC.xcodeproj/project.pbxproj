@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FB8F69F5A4595EA0EB12920 /* libPods-OMFC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D17D793F035A35082D4D80 /* libPods-OMFC.a */; };
 		A70F470F1EA05B98003914CC /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A70F470E1EA05B98003914CC /* NSArray+Log.m */; };
 		A70F47121EA067FD003914CC /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A70F47111EA067FD003914CC /* NSDictionary+Log.m */; };
 		A70F47161EA06BB9003914CC /* NSString+Contain.m in Sources */ = {isa = PBXBuildFile; fileRef = A70F47151EA06BB9003914CC /* NSString+Contain.m */; };
@@ -47,6 +48,7 @@
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
 		AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADF1F0E37820013BD7F /* OMMainVC.m */; };
 		AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */; };
+		AD80C8F6207CAD7D00392AEA /* MJExtensionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80C8F5207CAD7D00392AEA /* MJExtensionVC.m */; };
 		AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD83E1691F0F21F6009EECC5 /* CopyViewController.m */; };
 		AD9502031FE3A099002281D5 /* HardWareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9502021FE3A099002281D5 /* HardWareViewController.m */; };
 		AD95AE21204D133F0016C397 /* URLViewConrtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95AE20204D133F0016C397 /* URLViewConrtroller.m */; };
@@ -63,6 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37D17D793F035A35082D4D80 /* libPods-OMFC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMFC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		998A1E9D8A936E78CE4ED438 /* Pods-OMFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMFC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMFC/Pods-OMFC.debug.xcconfig"; sourceTree = "<group>"; };
 		A70F470D1EA05B98003914CC /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		A70F470E1EA05B98003914CC /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		A70F47101EA067FD003914CC /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 		AD6CEADF1F0E37820013BD7F /* OMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMMainVC.m; sourceTree = "<group>"; };
 		AD7B28491FAB113400AAD898 /* NSArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayViewController.h; sourceTree = "<group>"; };
 		AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayViewController.m; sourceTree = "<group>"; };
+		AD80C8F4207CAD7D00392AEA /* MJExtensionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionVC.h; sourceTree = "<group>"; };
+		AD80C8F5207CAD7D00392AEA /* MJExtensionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionVC.m; sourceTree = "<group>"; };
 		AD83E1681F0F21F6009EECC5 /* CopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		AD83E1691F0F21F6009EECC5 /* CopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		AD9502011FE3A099002281D5 /* HardWareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HardWareViewController.h; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 		ADF5476020721D9B00ACCDF5 /* OMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMManager.m; sourceTree = "<group>"; };
 		ADF57AC81F2043DA0081757F /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		ADF57AC91F2043DA0081757F /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		FA476B6782CCD6DFD15B3D80 /* Pods-OMFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMFC.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMFC/Pods-OMFC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,12 +199,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB8F69F5A4595EA0EB12920 /* libPods-OMFC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6B6932CEB034284CAF7A3F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				998A1E9D8A936E78CE4ED438 /* Pods-OMFC.debug.xcconfig */,
+				FA476B6782CCD6DFD15B3D80 /* Pods-OMFC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A70F47131EA06BB9003914CC /* 包含 */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +230,7 @@
 				A714F9B31E9DDF40007849EE /* OMFC */,
 				A714F9B21E9DDF40007849EE /* Products */,
 				AD4694A51F1DA1C2003C6137 /* Frameworks */,
+				A6B6932CEB034284CAF7A3F4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,6 +349,7 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD80C8F2207CAADF00392AEA /* MJExtensionVC */,
 				AD95AE1E204D131B0016C397 /* URL页面 */,
 				ADE05CDC2079ADEE00108F16 /* Block、delegate */,
 				AD47B8011FA9A25300D1A5FA /* 数组 */,
@@ -419,6 +438,7 @@
 				AD4694AA1F1DEEC2003C6137 /* PhotosUI.framework */,
 				AD4694A81F1DEEB9003C6137 /* Photos.framework */,
 				AD4694A61F1DA1C2003C6137 /* AVFoundation.framework */,
+				37D17D793F035A35082D4D80 /* libPods-OMFC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -482,6 +502,23 @@
 				ADC1C4D11FC6735400FA61D3 /* TRY.m */,
 			);
 			path = "选择环境";
+			sourceTree = "<group>";
+		};
+		AD80C8F2207CAADF00392AEA /* MJExtensionVC */ = {
+			isa = PBXGroup;
+			children = (
+				AD80C8F4207CAD7D00392AEA /* MJExtensionVC.h */,
+				AD80C8F5207CAD7D00392AEA /* MJExtensionVC.m */,
+				AD80C8F3207CAADF00392AEA /* MJExtensionModel */,
+			);
+			path = MJExtensionVC;
+			sourceTree = "<group>";
+		};
+		AD80C8F3207CAADF00392AEA /* MJExtensionModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MJExtensionModel;
 			sourceTree = "<group>";
 		};
 		AD83E1671F0F21BF009EECC5 /* 复制粘贴 */ = {
@@ -597,9 +634,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A714F9C81E9DDF41007849EE /* Build configuration list for PBXNativeTarget "OMFC" */;
 			buildPhases = (
+				2224FE250C5DD478D95B23FF /* [CP] Check Pods Manifest.lock */,
 				A714F9AD1E9DDF40007849EE /* Sources */,
 				A714F9AE1E9DDF40007849EE /* Frameworks */,
 				A714F9AF1E9DDF40007849EE /* Resources */,
+				55AFF65A371C2F71FF015465 /* [CP] Embed Pods Frameworks */,
+				8DAEF47E30F7A1FD05C17702 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -659,6 +699,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2224FE250C5DD478D95B23FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OMFC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55AFF65A371C2F71FF015465 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OMFC/Pods-OMFC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DAEF47E30F7A1FD05C17702 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OMFC/Pods-OMFC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A714F9AD1E9DDF40007849EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -711,6 +802,7 @@
 				AD3318A51FB2B1E8005E3C29 /* ZXPUnicode.m in Sources */,
 				AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */,
 				AD57E802207384BD0083E5EF /* Person.m in Sources */,
+				AD80C8F6207CAD7D00392AEA /* MJExtensionVC.m in Sources */,
 				A714FA031E9DE044007849EE /* MASViewConstraint.m in Sources */,
 				A714FA071E9DE044007849EE /* TTTAttributedLabel.m in Sources */,
 			);
@@ -832,6 +924,7 @@
 		};
 		A714F9C91E9DDF41007849EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 998A1E9D8A936E78CE4ED438 /* Pods-OMFC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -849,6 +942,7 @@
 		};
 		A714F9CA1E9DDF41007849EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA476B6782CCD6DFD15B3D80 /* Pods-OMFC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

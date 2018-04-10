@@ -49,6 +49,12 @@ static NSString *string = @"如果我能看得见就能轻易的分辨白天黑�
     HeighCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CustomCellID];
     if (nil == cell) {
         cell = [[HeighCustomCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:CustomCellID];
+        
+        
+        [cell setCellBlock:^{
+            
+            
+        }];
     }
     cell.detailLabel.text = string;
     return cell;

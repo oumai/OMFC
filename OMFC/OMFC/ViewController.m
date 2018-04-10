@@ -43,6 +43,7 @@
 #import "HardWareViewController.h"
 #import "SinletonViewController.h" //单列
 #import "LifeCycleViewController.h" //生命周期
+#import "BlockViewController.h"   //block
 /*
  ④
  
@@ -114,7 +115,7 @@
                             @"title":@[@"NSArrayViewController",@"NSArray和NSString",@"",@"",@"",@""]},
                           
                           @{@"header":@"",
-                            @"title":@[@"URL",@"singleton",@"生命周期",@"",@"",@""]},
+                            @"title":@[@"URL",@"singleton",@"生命周期",@"Block",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -204,6 +205,8 @@
                 [self.navigationController pushViewController:vc animated:YES];
             }
             else if (indexPath.row == 2) {
+                
+               
                          }
             else if (indexPath.row == 3)
             {
@@ -236,6 +239,11 @@
             else if (indexPath.row == 2)
             {
                 LifeCycleViewController *vc = [LifeCycleViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 3) {
+                
+                BlockViewController *vc = [BlockViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
             

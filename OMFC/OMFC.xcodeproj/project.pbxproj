@@ -53,7 +53,10 @@
 		AD967DC2204F8BAC00560872 /* OMJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD967DC1204F8BAB00560872 /* OMJSObject.m */; };
 		ADAACA161F0C76A2006FB73C /* HeighCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAACA151F0C76A2006FB73C /* HeighCustomCell.m */; };
 		ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB7927C1F0B2FC200A8DEF5 /* HeighViewController.m */; };
+		ADBAA38B207B079F00F538F5 /* SampleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBAA38A207B079F00F538F5 /* SampleObject.m */; };
 		ADC1C4D21FC6735400FA61D3 /* TRY.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC1C4D11FC6735400FA61D3 /* TRY.m */; };
+		ADE05CDF2079AE1500108F16 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE05CDE2079AE1500108F16 /* BlockViewController.m */; };
+		ADE05CE22079AE6F00108F16 /* ChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE05CE12079AE6F00108F16 /* ChildrenViewController.m */; };
 		ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */; };
 		ADF5476120721D9B00ACCDF5 /* OMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5476020721D9B00ACCDF5 /* OMManager.m */; };
 		ADF57ACA1F2043DA0081757F /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF57AC91F2043DA0081757F /* Tools.m */; };
@@ -167,8 +170,14 @@
 		ADB7927F1F0B325E00A8DEF5 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		ADB792801F0B325E00A8DEF5 /* KMCloudHealth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCloudHealth.h; sourceTree = "<group>"; };
 		ADB792811F0B325E00A8DEF5 /* KMHealthBAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHealthBAT.h; sourceTree = "<group>"; };
+		ADBAA389207B079F00F538F5 /* SampleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleObject.h; sourceTree = "<group>"; };
+		ADBAA38A207B079F00F538F5 /* SampleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleObject.m; sourceTree = "<group>"; };
 		ADC1C4D01FC6735400FA61D3 /* TRY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRY.h; sourceTree = "<group>"; };
 		ADC1C4D11FC6735400FA61D3 /* TRY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRY.m; sourceTree = "<group>"; };
+		ADE05CDD2079AE1500108F16 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		ADE05CDE2079AE1500108F16 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		ADE05CE02079AE6F00108F16 /* ChildrenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildrenViewController.h; sourceTree = "<group>"; };
+		ADE05CE12079AE6F00108F16 /* ChildrenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildrenViewController.m; sourceTree = "<group>"; };
 		ADECE4261F17727D00A9123D /* VerifyIDCardNumberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyIDCardNumberVC.h; sourceTree = "<group>"; };
 		ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyIDCardNumberVC.m; sourceTree = "<group>"; };
 		ADF5475D20721C9400ACCDF5 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -323,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				AD95AE1E204D131B0016C397 /* URL页面 */,
+				ADE05CDC2079ADEE00108F16 /* Block、delegate */,
 				AD47B8011FA9A25300D1A5FA /* 数组 */,
 				A714FA0D1E9E19CC007849EE /* 类别 */,
 				AD4694A11F1D9EEC003C6137 /* 拍照 */,
@@ -530,6 +540,27 @@
 			path = "获取高度";
 			sourceTree = "<group>";
 		};
+		ADBAA388207B078A00F538F5 /* __strong和__weak */ = {
+			isa = PBXGroup;
+			children = (
+				ADBAA389207B079F00F538F5 /* SampleObject.h */,
+				ADBAA38A207B079F00F538F5 /* SampleObject.m */,
+			);
+			path = "__strong和__weak";
+			sourceTree = "<group>";
+		};
+		ADE05CDC2079ADEE00108F16 /* Block、delegate */ = {
+			isa = PBXGroup;
+			children = (
+				ADE05CDD2079AE1500108F16 /* BlockViewController.h */,
+				ADE05CDE2079AE1500108F16 /* BlockViewController.m */,
+				ADE05CE02079AE6F00108F16 /* ChildrenViewController.h */,
+				ADE05CE12079AE6F00108F16 /* ChildrenViewController.m */,
+				ADBAA388207B078A00F538F5 /* __strong和__weak */,
+			);
+			path = "Block、delegate";
+			sourceTree = "<group>";
+		};
 		ADECE4251F17725B00A9123D /* 身份证验 */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,14 +675,17 @@
 				AD6549551F21A9D700336967 /* SZImageView.m in Sources */,
 				A714F9FA1E9DE044007849EE /* UIButton+Tool.m in Sources */,
 				A714F9F81E9DE044007849EE /* NSString+SQTool.m in Sources */,
+				ADE05CE22079AE6F00108F16 /* ChildrenViewController.m in Sources */,
 				A70F47161EA06BB9003914CC /* NSString+Contain.m in Sources */,
 				ADC1C4D21FC6735400FA61D3 /* TRY.m in Sources */,
+				ADE05CDF2079AE1500108F16 /* BlockViewController.m in Sources */,
 				AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */,
 				ADF57ACA1F2043DA0081757F /* Tools.m in Sources */,
 				AD57E7FF207357440083E5EF /* NSArrayVC.m in Sources */,
 				A714F9BC1E9DDF41007849EE /* ViewController.m in Sources */,
 				A714F9B91E9DDF41007849EE /* AppDelegate.m in Sources */,
 				A714FA021E9DE044007849EE /* MASViewAttribute.m in Sources */,
+				ADBAA38B207B079F00F538F5 /* SampleObject.m in Sources */,
 				ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */,
 				A714F9FE1E9DE044007849EE /* MASCompositeConstraint.m in Sources */,
 				ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */,

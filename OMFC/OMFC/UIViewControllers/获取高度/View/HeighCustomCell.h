@@ -10,6 +10,9 @@
 
 @interface HeighCustomCell : UITableViewCell
 + (CGFloat) heightForCellWithString:(NSString *)string;
+
+@property (nonatomic, strong) void(^cellBlock)();
+@property (nonatomic, strong) UINavigationController *naviVgation;
 @property (nonatomic, strong) TTTAttributedLabel *detailLabel;
 
 @end

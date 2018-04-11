@@ -47,8 +47,15 @@
 		AD6549571F21FDF500336967 /* SZImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6549561F21FDF500336967 /* SZImageView.xib */; };
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
 		AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADF1F0E37820013BD7F /* OMMainVC.m */; };
+		AD75F249207D8F6600E0C0CD /* BATMeOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75F248207D8F6600E0C0CD /* BATMeOrderViewController.m */; };
+		AD75F24E207D973F00E0C0CD /* BATWillPayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75F24C207D973F00E0C0CD /* BATWillPayCell.m */; };
+		AD75F253207DDD5500E0C0CD /* OTCDrugData.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75F24F207DDD5500E0C0CD /* OTCDrugData.m */; };
+		AD75F254207DDD5500E0C0CD /* PharmacyOrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75F252207DDD5500E0C0CD /* PharmacyOrderListModel.m */; };
 		AD7B284B1FAB113400AAD898 /* NSArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */; };
 		AD80C8F6207CAD7D00392AEA /* MJExtensionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80C8F5207CAD7D00392AEA /* MJExtensionVC.m */; };
+		AD80C8FB207CADF600392AEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80C8F9207CADF600392AEA /* User.m */; };
+		AD80C8FC207CADF600392AEA /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80C8FA207CADF600392AEA /* Status.m */; };
+		AD80C8FF207CB23300392AEA /* StatusResult.m in Sources */ = {isa = PBXBuildFile; fileRef = AD80C8FE207CB23300392AEA /* StatusResult.m */; };
 		AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD83E1691F0F21F6009EECC5 /* CopyViewController.m */; };
 		AD9502031FE3A099002281D5 /* HardWareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9502021FE3A099002281D5 /* HardWareViewController.m */; };
 		AD95AE21204D133F0016C397 /* URLViewConrtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95AE20204D133F0016C397 /* URLViewConrtroller.m */; };
@@ -155,10 +162,24 @@
 		AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMConfigNetVC.m; sourceTree = "<group>"; };
 		AD6CEADE1F0E37820013BD7F /* OMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMainVC.h; sourceTree = "<group>"; };
 		AD6CEADF1F0E37820013BD7F /* OMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMMainVC.m; sourceTree = "<group>"; };
+		AD75F247207D8F6600E0C0CD /* BATMeOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATMeOrderViewController.h; sourceTree = "<group>"; };
+		AD75F248207D8F6600E0C0CD /* BATMeOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BATMeOrderViewController.m; sourceTree = "<group>"; };
+		AD75F24C207D973F00E0C0CD /* BATWillPayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATWillPayCell.m; sourceTree = "<group>"; };
+		AD75F24D207D973F00E0C0CD /* BATWillPayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATWillPayCell.h; sourceTree = "<group>"; };
+		AD75F24F207DDD5500E0C0CD /* OTCDrugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTCDrugData.m; sourceTree = "<group>"; };
+		AD75F250207DDD5500E0C0CD /* OTCDrugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTCDrugData.h; sourceTree = "<group>"; };
+		AD75F251207DDD5500E0C0CD /* PharmacyOrderListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PharmacyOrderListModel.h; sourceTree = "<group>"; };
+		AD75F252207DDD5500E0C0CD /* PharmacyOrderListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PharmacyOrderListModel.m; sourceTree = "<group>"; };
 		AD7B28491FAB113400AAD898 /* NSArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayViewController.h; sourceTree = "<group>"; };
 		AD7B284A1FAB113400AAD898 /* NSArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayViewController.m; sourceTree = "<group>"; };
 		AD80C8F4207CAD7D00392AEA /* MJExtensionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionVC.h; sourceTree = "<group>"; };
 		AD80C8F5207CAD7D00392AEA /* MJExtensionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionVC.m; sourceTree = "<group>"; };
+		AD80C8F7207CADF500392AEA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AD80C8F8207CADF500392AEA /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		AD80C8F9207CADF600392AEA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AD80C8FA207CADF600392AEA /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		AD80C8FD207CB23300392AEA /* StatusResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusResult.h; sourceTree = "<group>"; };
+		AD80C8FE207CB23300392AEA /* StatusResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusResult.m; sourceTree = "<group>"; };
 		AD83E1681F0F21F6009EECC5 /* CopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		AD83E1691F0F21F6009EECC5 /* CopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		AD9502011FE3A099002281D5 /* HardWareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HardWareViewController.h; sourceTree = "<group>"; };
@@ -504,11 +525,32 @@
 			path = "选择环境";
 			sourceTree = "<group>";
 		};
+		AD75F24A207D906100E0C0CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F250207DDD5500E0C0CD /* OTCDrugData.h */,
+				AD75F24F207DDD5500E0C0CD /* OTCDrugData.m */,
+				AD75F251207DDD5500E0C0CD /* PharmacyOrderListModel.h */,
+				AD75F252207DDD5500E0C0CD /* PharmacyOrderListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD75F24B207D906200E0C0CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F24D207D973F00E0C0CD /* BATWillPayCell.h */,
+				AD75F24C207D973F00E0C0CD /* BATWillPayCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AD80C8F2207CAADF00392AEA /* MJExtensionVC */ = {
 			isa = PBXGroup;
 			children = (
 				AD80C8F4207CAD7D00392AEA /* MJExtensionVC.h */,
 				AD80C8F5207CAD7D00392AEA /* MJExtensionVC.m */,
+				AD80C900207CBB9700392AEA /* BAT订单 */,
 				AD80C8F3207CAADF00392AEA /* MJExtensionModel */,
 			);
 			path = MJExtensionVC;
@@ -517,8 +559,25 @@
 		AD80C8F3207CAADF00392AEA /* MJExtensionModel */ = {
 			isa = PBXGroup;
 			children = (
+				AD80C8F8207CADF500392AEA /* Status.h */,
+				AD80C8FA207CADF600392AEA /* Status.m */,
+				AD80C8F7207CADF500392AEA /* User.h */,
+				AD80C8F9207CADF600392AEA /* User.m */,
+				AD80C8FD207CB23300392AEA /* StatusResult.h */,
+				AD80C8FE207CB23300392AEA /* StatusResult.m */,
 			);
 			path = MJExtensionModel;
+			sourceTree = "<group>";
+		};
+		AD80C900207CBB9700392AEA /* BAT订单 */ = {
+			isa = PBXGroup;
+			children = (
+				AD75F247207D8F6600E0C0CD /* BATMeOrderViewController.h */,
+				AD75F248207D8F6600E0C0CD /* BATMeOrderViewController.m */,
+				AD75F24A207D906100E0C0CD /* Model */,
+				AD75F24B207D906200E0C0CD /* View */,
+			);
+			path = "BAT订单";
 			sourceTree = "<group>";
 		};
 		AD83E1671F0F21BF009EECC5 /* 复制粘贴 */ = {
@@ -739,9 +798,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OMFC/Pods-OMFC-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -768,23 +832,29 @@
 				A714F9F81E9DE044007849EE /* NSString+SQTool.m in Sources */,
 				ADE05CE22079AE6F00108F16 /* ChildrenViewController.m in Sources */,
 				A70F47161EA06BB9003914CC /* NSString+Contain.m in Sources */,
+				AD75F254207DDD5500E0C0CD /* PharmacyOrderListModel.m in Sources */,
 				ADC1C4D21FC6735400FA61D3 /* TRY.m in Sources */,
 				ADE05CDF2079AE1500108F16 /* BlockViewController.m in Sources */,
+				AD75F249207D8F6600E0C0CD /* BATMeOrderViewController.m in Sources */,
 				AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */,
 				ADF57ACA1F2043DA0081757F /* Tools.m in Sources */,
 				AD57E7FF207357440083E5EF /* NSArrayVC.m in Sources */,
 				A714F9BC1E9DDF41007849EE /* ViewController.m in Sources */,
+				AD80C8FC207CADF600392AEA /* Status.m in Sources */,
 				A714F9B91E9DDF41007849EE /* AppDelegate.m in Sources */,
 				A714FA021E9DE044007849EE /* MASViewAttribute.m in Sources */,
 				ADBAA38B207B079F00F538F5 /* SampleObject.m in Sources */,
+				AD75F24E207D973F00E0C0CD /* BATWillPayCell.m in Sources */,
 				ADB7927D1F0B2FC200A8DEF5 /* HeighViewController.m in Sources */,
 				A714F9FE1E9DE044007849EE /* MASCompositeConstraint.m in Sources */,
 				ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */,
 				A714F9B61E9DDF40007849EE /* main.m in Sources */,
+				AD80C8FF207CB23300392AEA /* StatusResult.m in Sources */,
 				A714F9FC1E9DE044007849EE /* UIImage+Tool.m in Sources */,
 				AD967DC2204F8BAC00560872 /* OMJSObject.m in Sources */,
 				A714FA001E9DE044007849EE /* MASConstraintMaker.m in Sources */,
 				AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */,
+				AD75F253207DDD5500E0C0CD /* OTCDrugData.m in Sources */,
 				A714F9FF1E9DE044007849EE /* MASConstraint.m in Sources */,
 				A714FA051E9DE044007849EE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				AD53331C2074578900AB63A8 /* LifeCycleViewController.m in Sources */,
@@ -793,6 +863,7 @@
 				A714FA011E9DE044007849EE /* MASLayoutConstraint.m in Sources */,
 				A714FA041E9DE044007849EE /* NSArray+MASAdditions.m in Sources */,
 				ADF5476120721D9B00ACCDF5 /* OMManager.m in Sources */,
+				AD80C8FB207CADF600392AEA /* User.m in Sources */,
 				AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */,
 				A714F9FD1E9DE044007849EE /* UILabel+Siman.m in Sources */,
 				A714F9F91E9DE044007849EE /* UIButton+SQTool.m in Sources */,
@@ -937,6 +1008,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "OMFC/UIViewControllers/选择环境/OMFC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -954,6 +1026,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OMFC/UIViewControllers/选择环境/OMFC-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

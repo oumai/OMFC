@@ -44,7 +44,8 @@
 #import "SinletonViewController.h" //单列
 #import "LifeCycleViewController.h" //生命周期
 #import "BlockViewController.h"   //block
-
+#import "MJExtensionVC.h"         //MJ测验
+#import "BATMeOrderViewController.h" //我的订单
 /*
  ④
  
@@ -116,7 +117,7 @@
                             @"title":@[@"NSArrayViewController",@"NSArray和NSString",@"",@"",@"",@""]},
                           
                           @{@"header":@"",
-                            @"title":@[@"URL",@"singleton",@"生命周期",@"Block",@"",@""]},
+                            @"title":@[@"URL",@"singleton",@"生命周期",@"Block",@"MJExtensionVC",@"我的订单BAT"]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -247,7 +248,16 @@
                 BlockViewController *vc = [BlockViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
-            
+            else if (indexPath.row == 4) {
+                
+                MJExtensionVC *vc = [MJExtensionVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row == 5) {
+                
+                BATMeOrderViewController *vc = [BATMeOrderViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
         }
         /*
          UICollectionViews

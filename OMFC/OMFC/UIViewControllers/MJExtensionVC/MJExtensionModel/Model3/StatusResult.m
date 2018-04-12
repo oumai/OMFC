@@ -10,11 +10,45 @@
 #import "MJExtension.h"
 #import "User.h"
 #import "Status.h"
-@class Ad;
 @implementation StatusResult
-// 实现这个方法的目的：告诉MJExtension框架statuses和ads数组里面装的是什么模型
 
+
+
+// 实现这个方法的目的：告诉MJExtension框架statuses和ads数组里面装的是什么模型
+//第①种方法
 /**/
+
+//+ (NSDictionary *)mj_objectClassInArray
+//{
+//    return @{@"statuses":[Status class]};
+//}
+
+
+//第②种方法
+//这个方法对比上面的2个方法更加没有侵入性和污染，因为不需要导入Status和Ad的头文件
++ (NSDictionary *)mj_objectClassInArray{
+    return @{
+             @"statuses" : @"Status",
+             @"ads" : @"Ad"
+             };
+}
+@end
+
+
+@implementation Ad
+//
+//+ (NSDictionary *)mj_objectClassInArray
+//{
+//    return @{@"ads":[Ad class]};
+//}
+//
+@end
+
+
+
+
+
+//第③种方法 和②类似
 // + (NSDictionary *)objectClassInArray{
 //
 //
@@ -36,32 +70,4 @@
 //     return nil;
 //
 // }
-
-
-//这个方法对比上面的2个方法更加没有侵入性和污染，因为不需要导入Status和Ad的头文件
-+ (NSDictionary *)mj_objectClassInArray{
-    return @{
-             @"statuses" : @"Status",
-             @"ads" : @"Ad"
-             };
-}
-//- (id)initWithCoder:(NSCoder *)decoder
-//{
-//    if (self = [super init]) {
-//        [self mj_decode:decoder];
-//    }
-//    return self;
-//}
-//
-//- (void)encodeWithCoder:(NSCoder *)encoder
-//{
-//    [self mj_encode:encoder];
-//}
-//+ (NSDictionary *)mj_objectClassInArray
-//{
-//
-//    return @{}
-//}
-@end
-
 

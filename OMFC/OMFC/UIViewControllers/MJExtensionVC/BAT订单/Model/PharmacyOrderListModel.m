@@ -11,19 +11,21 @@
 @implementation PharmacyOrderListModel
 + (NSDictionary *)mj_objectClassInArray{
     return @{ @"Data": [OTCDrugListData class]};
-}
-- (id)initWithCoder:(NSCoder *)decoder
-{
-    if (self = [super init]) {
-        [self mj_decode:decoder];
-    }
-    return self;
-}
+    //return @{ @"Data": @"OTCDrugListData"};
 
-- (void)encodeWithCoder:(NSCoder *)encoder
-{
-    [self mj_encode:encoder];
 }
+//- (id)initWithCoder:(NSCoder *)decoder
+//{
+//    if (self = [super init]) {
+//        [self mj_decode:decoder];
+//    }
+//    return self;
+//}
+//
+//- (void)encodeWithCoder:(NSCoder *)encoder
+//{
+//    [self mj_encode:encoder];
+//}
 
 
 @end
@@ -31,7 +33,9 @@
 @implementation OTCDrugListData
 
 + (NSDictionary *)mj_objectClassInArray{
-    return @{ @"ProductList": [OTCDrugData class]};
+    //return @{ @"ProductList": [OTCDrugData class]};
+    return @{ @"ProductList": @"OTCDrugData"};
+
 }
 - (id)initWithCoder:(NSCoder *)decoder
 {

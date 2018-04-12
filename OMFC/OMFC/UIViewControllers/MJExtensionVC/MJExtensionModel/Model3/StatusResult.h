@@ -8,12 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Ad : NSObject
-@property (copy, nonatomic) NSString *image;
-@property (copy, nonatomic) NSString *url;
-@end
 
-
+#import "User.h"
 
 @interface StatusResult : NSObject
 
@@ -25,3 +21,20 @@
 
 
 @end
+
+
+
+
+
+
+
+
+@interface Ad : NSObject
+@property (copy, nonatomic) NSString *image;
+@property (copy, nonatomic) NSString *url;
+
+@end
+
+
+
+

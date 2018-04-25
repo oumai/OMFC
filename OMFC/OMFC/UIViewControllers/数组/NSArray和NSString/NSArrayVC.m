@@ -33,7 +33,29 @@
     
     //文件读写
     [self arrayWrite];
+    
+    //数组中数字小于多少
+    [self compareNumber];
 }
+
+- (void)compareNumber
+{
+    NSArray *array = @[@0,@1,@2,@3,@4,@5];
+    
+    __block NSInteger count = 0;
+    
+    
+    [array enumerateObjectsUsingBlock:^(NSNumber *number, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        //有多少个小于2的数
+        if ([number compare:@6] == NSOrderedAscending) {
+            count++;
+        }
+    }];
+    
+    NSLog(@"count = %ld",count);
+}
+
 
 - (void)arrayWrite
 {

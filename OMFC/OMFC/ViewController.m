@@ -48,8 +48,9 @@
 #import "BATMeOrderViewController.h" //我的订单
 /*
  ④
- 
  */
+
+#import "RemoveCacheViewController.h"
 
 /*
  ⑤
@@ -265,6 +266,8 @@
         else if (indexPath.section == 3)
         {
             if (indexPath.row == 0) {
+                RemoveCacheViewController *vc = [RemoveCacheViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
                           }
             if (indexPath.row ==  1) {
                           }

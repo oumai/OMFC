@@ -67,6 +67,7 @@
 		ADB950F5207F5B9000B6C215 /* 我的订单数据截图.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB950F3207F5B9000B6C215 /* 我的订单数据截图.png */; };
 		ADB950F6207F5B9000B6C215 /* 我的订单数据截图2.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB950F4207F5B9000B6C215 /* 我的订单数据截图2.png */; };
 		ADBAA38B207B079F00F538F5 /* SampleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBAA38A207B079F00F538F5 /* SampleObject.m */; };
+		ADBEB12E20A041220059EB49 /* RemoveCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBEB12D20A041220059EB49 /* RemoveCacheViewController.m */; };
 		ADC1C4D21FC6735400FA61D3 /* TRY.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC1C4D11FC6735400FA61D3 /* TRY.m */; };
 		ADE05CDF2079AE1500108F16 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE05CDE2079AE1500108F16 /* BlockViewController.m */; };
 		ADE05CE22079AE6F00108F16 /* ChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE05CE12079AE6F00108F16 /* ChildrenViewController.m */; };
@@ -209,6 +210,8 @@
 		ADB950F4207F5B9000B6C215 /* 我的订单数据截图2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的订单数据截图2.png"; sourceTree = "<group>"; };
 		ADBAA389207B079F00F538F5 /* SampleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleObject.h; sourceTree = "<group>"; };
 		ADBAA38A207B079F00F538F5 /* SampleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleObject.m; sourceTree = "<group>"; };
+		ADBEB12C20A041220059EB49 /* RemoveCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveCacheViewController.h; sourceTree = "<group>"; };
+		ADBEB12D20A041220059EB49 /* RemoveCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveCacheViewController.m; sourceTree = "<group>"; };
 		ADC1C4D01FC6735400FA61D3 /* TRY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRY.h; sourceTree = "<group>"; };
 		ADC1C4D11FC6735400FA61D3 /* TRY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRY.m; sourceTree = "<group>"; };
 		ADE05CDD2079AE1500108F16 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
@@ -380,6 +383,7 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADBEB12B20A040EA0059EB49 /* 清除缓存 */,
 				AD80C8F2207CAADF00392AEA /* MJExtensionVC */,
 				AD95AE1E204D131B0016C397 /* URL页面 */,
 				ADE05CDC2079ADEE00108F16 /* Block、delegate */,
@@ -725,6 +729,15 @@
 			path = "__strong和__weak";
 			sourceTree = "<group>";
 		};
+		ADBEB12B20A040EA0059EB49 /* 清除缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				ADBEB12C20A041220059EB49 /* RemoveCacheViewController.h */,
+				ADBEB12D20A041220059EB49 /* RemoveCacheViewController.m */,
+			);
+			path = "清除缓存";
+			sourceTree = "<group>";
+		};
 		ADE05CDC2079ADEE00108F16 /* Block、delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -912,6 +925,7 @@
 				ADB950EC207F45C600B6C215 /* User.m in Sources */,
 				AD6549551F21A9D700336967 /* SZImageView.m in Sources */,
 				A714F9FA1E9DE044007849EE /* UIButton+Tool.m in Sources */,
+				ADBEB12E20A041220059EB49 /* RemoveCacheViewController.m in Sources */,
 				A714F9F81E9DE044007849EE /* NSString+SQTool.m in Sources */,
 				ADE05CE22079AE6F00108F16 /* ChildrenViewController.m in Sources */,
 				A70F47161EA06BB9003914CC /* NSString+Contain.m in Sources */,

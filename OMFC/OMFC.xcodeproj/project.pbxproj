@@ -47,6 +47,11 @@
 		AD6549571F21FDF500336967 /* SZImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6549561F21FDF500336967 /* SZImageView.xib */; };
 		AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */; };
 		AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6CEADF1F0E37820013BD7F /* OMMainVC.m */; };
+		AD71CD7A20A5268F003A7F97 /* 0282BD47-05B3-466D-B7E6-4543F33E83A5.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = AD71CD7520A5268F003A7F97 /* 0282BD47-05B3-466D-B7E6-4543F33E83A5.codesnippet */; };
+		AD71CD7B20A5268F003A7F97 /* 6279005B-72B2-472E-A699-866024AD6DEE.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = AD71CD7620A5268F003A7F97 /* 6279005B-72B2-472E-A699-866024AD6DEE.codesnippet */; };
+		AD71CD7C20A5268F003A7F97 /* 809C85AA-A69D-48C5-89BA-7333791E76D1.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = AD71CD7720A5268F003A7F97 /* 809C85AA-A69D-48C5-89BA-7333791E76D1.codesnippet */; };
+		AD71CD7D20A5268F003A7F97 /* 9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = AD71CD7820A5268F003A7F97 /* 9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet */; };
+		AD71CD7E20A5268F003A7F97 /* C8C23172-F9CB-4EF4-8B38-7BC8ED00887A.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = AD71CD7920A5268F003A7F97 /* C8C23172-F9CB-4EF4-8B38-7BC8ED00887A.codesnippet */; };
 		AD75F249207D8F6600E0C0CD /* BATMeOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75F248207D8F6600E0C0CD /* BATMeOrderViewController.m */; };
 		AD75F24E207D973F00E0C0CD /* BATWillPayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75F24C207D973F00E0C0CD /* BATWillPayCell.m */; };
 		AD75F253207DDD5500E0C0CD /* OTCDrugData.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75F24F207DDD5500E0C0CD /* OTCDrugData.m */; };
@@ -167,6 +172,11 @@
 		AD6CEADC1F0E35FF0013BD7F /* OMConfigNetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMConfigNetVC.m; sourceTree = "<group>"; };
 		AD6CEADE1F0E37820013BD7F /* OMMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMainVC.h; sourceTree = "<group>"; };
 		AD6CEADF1F0E37820013BD7F /* OMMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMMainVC.m; sourceTree = "<group>"; };
+		AD71CD7520A5268F003A7F97 /* 0282BD47-05B3-466D-B7E6-4543F33E83A5.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "0282BD47-05B3-466D-B7E6-4543F33E83A5.codesnippet"; sourceTree = "<group>"; };
+		AD71CD7620A5268F003A7F97 /* 6279005B-72B2-472E-A699-866024AD6DEE.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "6279005B-72B2-472E-A699-866024AD6DEE.codesnippet"; sourceTree = "<group>"; };
+		AD71CD7720A5268F003A7F97 /* 809C85AA-A69D-48C5-89BA-7333791E76D1.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "809C85AA-A69D-48C5-89BA-7333791E76D1.codesnippet"; sourceTree = "<group>"; };
+		AD71CD7820A5268F003A7F97 /* 9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet"; sourceTree = "<group>"; };
+		AD71CD7920A5268F003A7F97 /* C8C23172-F9CB-4EF4-8B38-7BC8ED00887A.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "C8C23172-F9CB-4EF4-8B38-7BC8ED00887A.codesnippet"; sourceTree = "<group>"; };
 		AD75F247207D8F6600E0C0CD /* BATMeOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BATMeOrderViewController.h; sourceTree = "<group>"; };
 		AD75F248207D8F6600E0C0CD /* BATMeOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BATMeOrderViewController.m; sourceTree = "<group>"; };
 		AD75F24C207D973F00E0C0CD /* BATWillPayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATWillPayCell.m; sourceTree = "<group>"; };
@@ -397,6 +407,7 @@
 				AD6CEADA1F0E35BF0013BD7F /* 选择环境 */,
 				ADF5475E20721D5400ACCDF5 /* 单例 */,
 				AD5333192074576A00AB63A8 /* 生命周期 */,
+				AD71CD7420A5268F003A7F97 /* 自定义代码块 */,
 				AD9501FE1FE39F6B002281D5 /* 硬件 */,
 			);
 			path = UIViewControllers;
@@ -537,6 +548,18 @@
 				ADC1C4D11FC6735400FA61D3 /* TRY.m */,
 			);
 			path = "选择环境";
+			sourceTree = "<group>";
+		};
+		AD71CD7420A5268F003A7F97 /* 自定义代码块 */ = {
+			isa = PBXGroup;
+			children = (
+				AD71CD7520A5268F003A7F97 /* 0282BD47-05B3-466D-B7E6-4543F33E83A5.codesnippet */,
+				AD71CD7620A5268F003A7F97 /* 6279005B-72B2-472E-A699-866024AD6DEE.codesnippet */,
+				AD71CD7720A5268F003A7F97 /* 809C85AA-A69D-48C5-89BA-7333791E76D1.codesnippet */,
+				AD71CD7820A5268F003A7F97 /* 9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet */,
+				AD71CD7920A5268F003A7F97 /* C8C23172-F9CB-4EF4-8B38-7BC8ED00887A.codesnippet */,
+			);
+			path = "自定义代码块";
 			sourceTree = "<group>";
 		};
 		AD75F24A207D906100E0C0CD /* Model */ = {
@@ -842,12 +865,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD71CD7C20A5268F003A7F97 /* 809C85AA-A69D-48C5-89BA-7333791E76D1.codesnippet in Resources */,
 				A714F9C41E9DDF41007849EE /* LaunchScreen.storyboard in Resources */,
 				A714F9C11E9DDF41007849EE /* Assets.xcassets in Resources */,
+				AD71CD7B20A5268F003A7F97 /* 6279005B-72B2-472E-A699-866024AD6DEE.codesnippet in Resources */,
 				ADB950F5207F5B9000B6C215 /* 我的订单数据截图.png in Resources */,
 				A714F9BF1E9DDF41007849EE /* Main.storyboard in Resources */,
+				AD71CD7E20A5268F003A7F97 /* C8C23172-F9CB-4EF4-8B38-7BC8ED00887A.codesnippet in Resources */,
 				ADB950F6207F5B9000B6C215 /* 我的订单数据截图2.png in Resources */,
 				AD6549571F21FDF500336967 /* SZImageView.xib in Resources */,
+				AD71CD7A20A5268F003A7F97 /* 0282BD47-05B3-466D-B7E6-4543F33E83A5.codesnippet in Resources */,
+				AD71CD7D20A5268F003A7F97 /* 9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

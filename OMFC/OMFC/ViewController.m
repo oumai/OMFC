@@ -46,11 +46,17 @@
 #import "BlockViewController.h"   //block
 #import "MJExtensionVC.h"         //MJ测验
 #import "BATMeOrderViewController.h" //我的订单
+
+
 /*
  ④
  */
 
 #import "RemoveCacheViewController.h"
+#import "UIWebViewController.h"
+#import "UIWebAnimationVC.h"
+#import "WKWebViewController.h"
+
 
 /*
  ⑤
@@ -121,7 +127,7 @@
                             @"title":@[@"URL",@"singleton",@"生命周期",@"Block",@"MJExtensionVC",@"我的订单BAT"]},
                           
                           @{@"header":@"",
-                            @"title":@[@"",@"",@"",@"",@"",@""]},
+                            @"title":@[@"",@"UIWebView",@"UIWebAnimationVC.",@"WKWebView",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -269,8 +275,18 @@
                 RemoveCacheViewController *vc = [RemoveCacheViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
                           }
-            if (indexPath.row ==  1) {
-                          }
+            else if (indexPath.row ==  1) {
+                UIWebViewController *vc = [UIWebViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row ==  2) {
+                UIWebAnimationVC *vc = [UIWebAnimationVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row ==  3) {
+                WKWebViewController *vc = [WKWebViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
         }
         /*弹框*/
         else if (indexPath.section == 4)

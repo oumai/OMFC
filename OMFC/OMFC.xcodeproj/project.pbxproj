@@ -37,6 +37,10 @@
 		A714FA0C1E9DE505007849EE /* GDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA0B1E9DE505007849EE /* GDBViewController.m */; };
 		A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA131E9E1CBB007849EE /* CategoryViewController.m */; };
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
+		AD263BC5212A8D980081E143 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD263BC4212A8D980081E143 /* UIWebViewController.m */; };
+		AD263BC8212A8DAF0081E143 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD263BC7212A8DAF0081E143 /* WKWebViewController.m */; };
+		AD263BCC212AAB900081E143 /* WHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD263BCB212AAB900081E143 /* WHAnimation.m */; };
+		AD263BCF212AAD100081E143 /* UIWebAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD263BCE212AAD100081E143 /* UIWebAnimationVC.m */; };
 		AD3318A51FB2B1E8005E3C29 /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3318A41FB2B1E7005E3C29 /* ZXPUnicode.m */; };
 		AD4694A41F1D9F03003C6137 /* ChoosePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4694A31F1D9F03003C6137 /* ChoosePhotoVC.m */; };
 		AD53331C2074578900AB63A8 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD53331B2074578900AB63A8 /* LifeCycleViewController.m */; };
@@ -146,6 +150,14 @@
 		A714FA131E9E1CBB007849EE /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		A714FA151E9E1DAC007849EE /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
 		A714FA161E9E1DAC007849EE /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
+		AD263BC3212A8D980081E143 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		AD263BC4212A8D980081E143 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		AD263BC6212A8DAF0081E143 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		AD263BC7212A8DAF0081E143 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		AD263BCA212AAB900081E143 /* WHAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHAnimation.h; sourceTree = "<group>"; };
+		AD263BCB212AAB900081E143 /* WHAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHAnimation.m; sourceTree = "<group>"; };
+		AD263BCD212AAD100081E143 /* UIWebAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebAnimationVC.h; sourceTree = "<group>"; };
+		AD263BCE212AAD100081E143 /* UIWebAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebAnimationVC.m; sourceTree = "<group>"; };
 		AD3318A31FB2B1E7005E3C29 /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
 		AD3318A41FB2B1E7005E3C29 /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
 		AD4694A21F1D9F03003C6137 /* ChoosePhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePhotoVC.h; sourceTree = "<group>"; };
@@ -400,6 +412,7 @@
 				AD47B8011FA9A25300D1A5FA /* 数组 */,
 				A714FA0D1E9E19CC007849EE /* 类别 */,
 				AD4694A11F1D9EEC003C6137 /* 拍照 */,
+				AD263BC2212A8D790081E143 /* WebView */,
 				A714FA091E9DE4F2007849EE /* 打印、GDB */,
 				AD83E1671F0F21BF009EECC5 /* 复制粘贴 */,
 				ADB7927A1F0B2F9F00A8DEF5 /* 获取高度 */,
@@ -453,6 +466,29 @@
 				AD3318A21FB2B1E7005E3C29 /* ZXPUnicode */,
 			);
 			path = "数组打印汉字";
+			sourceTree = "<group>";
+		};
+		AD263BC2212A8D790081E143 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				AD263BC3212A8D980081E143 /* UIWebViewController.h */,
+				AD263BC4212A8D980081E143 /* UIWebViewController.m */,
+				AD263BCD212AAD100081E143 /* UIWebAnimationVC.h */,
+				AD263BCE212AAD100081E143 /* UIWebAnimationVC.m */,
+				AD263BC6212A8DAF0081E143 /* WKWebViewController.h */,
+				AD263BC7212A8DAF0081E143 /* WKWebViewController.m */,
+				AD263BC9212AAB900081E143 /* View */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		AD263BC9212AAB900081E143 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD263BCA212AAB900081E143 /* WHAnimation.h */,
+				AD263BCB212AAB900081E143 /* WHAnimation.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AD3318A21FB2B1E7005E3C29 /* ZXPUnicode */ = {
@@ -836,7 +872,7 @@
 				TargetAttributes = {
 					A714F9B01E9DDF40007849EE = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 4D8A875794;
+						DevelopmentTeam = XYBK7B7U6R;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -976,18 +1012,22 @@
 				ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */,
 				A714F9B61E9DDF40007849EE /* main.m in Sources */,
 				ADB950ED207F45C600B6C215 /* StatusResult.m in Sources */,
+				AD263BCF212AAD100081E143 /* UIWebAnimationVC.m in Sources */,
 				A714F9FC1E9DE044007849EE /* UIImage+Tool.m in Sources */,
 				AD967DC2204F8BAC00560872 /* OMJSObject.m in Sources */,
 				A714FA001E9DE044007849EE /* MASConstraintMaker.m in Sources */,
 				AD83E16A1F0F21F6009EECC5 /* CopyViewController.m in Sources */,
 				AD75F253207DDD5500E0C0CD /* OTCDrugData.m in Sources */,
 				A714F9FF1E9DE044007849EE /* MASConstraint.m in Sources */,
+				AD263BC5212A8D980081E143 /* UIWebViewController.m in Sources */,
 				A714FA051E9DE044007849EE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				AD53331C2074578900AB63A8 /* LifeCycleViewController.m in Sources */,
 				AD9502031FE3A099002281D5 /* HardWareViewController.m in Sources */,
 				A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */,
+				AD263BCC212AAB900081E143 /* WHAnimation.m in Sources */,
 				A714FA011E9DE044007849EE /* MASLayoutConstraint.m in Sources */,
 				A714FA041E9DE044007849EE /* NSArray+MASAdditions.m in Sources */,
+				AD263BC8212A8DAF0081E143 /* WKWebViewController.m in Sources */,
 				ADF5476120721D9B00ACCDF5 /* OMManager.m in Sources */,
 				AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */,
 				A714F9FD1E9DE044007849EE /* UILabel+Siman.m in Sources */,
@@ -1125,7 +1165,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4D8A875794;
+				DEVELOPMENT_TEAM = XYBK7B7U6R;
 				INFOPLIST_FILE = OMFC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1144,7 +1184,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4D8A875794;
+				DEVELOPMENT_TEAM = XYBK7B7U6R;
 				INFOPLIST_FILE = OMFC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

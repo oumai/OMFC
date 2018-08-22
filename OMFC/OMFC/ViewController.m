@@ -37,6 +37,7 @@
 #import "NSArrayViewController.h"
 #import "NSArrayVC.h"
 
+#import "GCDViewController.h"   //多线程
 /*
  ③
  */
@@ -52,7 +53,8 @@
  ④
  */
 
-#import "RemoveCacheViewController.h"
+#import "CacheViewController.h"       //缓存
+#import "RemoveCacheViewController.h" //清除缓存
 #import "UIWebViewController.h"
 #import "UIWebAnimationVC.h"
 #import "WKWebViewController.h"
@@ -121,13 +123,13 @@
                             @"title":@[@"GDBViewController",@"CategoryViewController",@"获取高度",@"OMConfigNetVC",@"CopyViewController",@"VerifyIDCardNumberVC",@"ChoosePhotoVC"]},
                           
                           @{@"header":@"",
-                            @"title":@[@"NSArrayViewController",@"NSArray和NSString",@"",@"",@"",@""]},
+                            @"title":@[@"NSArrayViewController",@"NSArray和NSString",@"多线程",@"",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"URL",@"singleton",@"生命周期",@"Block",@"MJExtensionVC",@"我的订单BAT"]},
                           
                           @{@"header":@"",
-                            @"title":@[@"",@"UIWebView",@"UIWebAnimationVC.",@"WKWebView",@"",@""]},
+                            @"title":@[@"缓存",@"清除缓存",@"UIWebView",@"UIWebAnimationVC.",@"WKWebView",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -215,6 +217,9 @@
             }
             else if (indexPath.row == 2) {
                 
+                
+                GCDViewController *vc = [GCDViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
                
                          }
             else if (indexPath.row == 3)
@@ -272,18 +277,22 @@
         else if (indexPath.section == 3)
         {
             if (indexPath.row == 0) {
-                RemoveCacheViewController *vc = [RemoveCacheViewController new];
+                CacheViewController *vc = [CacheViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
                           }
             else if (indexPath.row ==  1) {
-                UIWebViewController *vc = [UIWebViewController new];
+                RemoveCacheViewController *vc = [RemoveCacheViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
             else if (indexPath.row ==  2) {
-                UIWebAnimationVC *vc = [UIWebAnimationVC new];
+                UIWebViewController *vc = [UIWebViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
             else if (indexPath.row ==  3) {
+                UIWebAnimationVC *vc = [UIWebAnimationVC new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row ==  4) {
                 WKWebViewController *vc = [WKWebViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }

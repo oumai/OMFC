@@ -83,6 +83,8 @@
 		ADECE4281F17727D00A9123D /* VerifyIDCardNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADECE4271F17727D00A9123D /* VerifyIDCardNumberVC.m */; };
 		ADF5476120721D9B00ACCDF5 /* OMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5476020721D9B00ACCDF5 /* OMManager.m */; };
 		ADF57ACA1F2043DA0081757F /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF57AC91F2043DA0081757F /* Tools.m */; };
+		ADFC7584212C2626005331DF /* CacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC7583212C2626005331DF /* CacheViewController.m */; };
+		ADFC7588212C2B67005331DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC7587212C2B67005331DF /* GCDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +249,10 @@
 		ADF5476020721D9B00ACCDF5 /* OMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMManager.m; sourceTree = "<group>"; };
 		ADF57AC81F2043DA0081757F /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		ADF57AC91F2043DA0081757F /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		ADFC7582212C2626005331DF /* CacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheViewController.h; sourceTree = "<group>"; };
+		ADFC7583212C2626005331DF /* CacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheViewController.m; sourceTree = "<group>"; };
+		ADFC7586212C2B67005331DF /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		ADFC7587212C2B67005331DF /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		FA476B6782CCD6DFD15B3D80 /* Pods-OMFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMFC.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMFC/Pods-OMFC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -405,6 +411,8 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADFC7585212C2AD7005331DF /* 多线程 */,
+				ADFC7581212C25FE005331DF /* 缓存 */,
 				ADBEB12B20A040EA0059EB49 /* 清除缓存 */,
 				AD80C8F2207CAADF00392AEA /* MJExtensionVC */,
 				AD95AE1E204D131B0016C397 /* URL页面 */,
@@ -838,6 +846,24 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		ADFC7581212C25FE005331DF /* 缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC7582212C2626005331DF /* CacheViewController.h */,
+				ADFC7583212C2626005331DF /* CacheViewController.m */,
+			);
+			path = "缓存";
+			sourceTree = "<group>";
+		};
+		ADFC7585212C2AD7005331DF /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC7586212C2B67005331DF /* GCDViewController.h */,
+				ADFC7587212C2B67005331DF /* GCDViewController.m */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -985,6 +1011,7 @@
 				A714FA0C1E9DE505007849EE /* GDBViewController.m in Sources */,
 				A70F47121EA067FD003914CC /* NSDictionary+Log.m in Sources */,
 				A714F9F71E9DE044007849EE /* NSAttributedString+ParagraphStyle.m in Sources */,
+				ADFC7588212C2B67005331DF /* GCDViewController.m in Sources */,
 				A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */,
 				ADB950EC207F45C600B6C215 /* User.m in Sources */,
 				AD6549551F21A9D700336967 /* SZImageView.m in Sources */,
@@ -1025,6 +1052,7 @@
 				AD9502031FE3A099002281D5 /* HardWareViewController.m in Sources */,
 				A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */,
 				AD263BCC212AAB900081E143 /* WHAnimation.m in Sources */,
+				ADFC7584212C2626005331DF /* CacheViewController.m in Sources */,
 				A714FA011E9DE044007849EE /* MASLayoutConstraint.m in Sources */,
 				A714FA041E9DE044007849EE /* NSArray+MASAdditions.m in Sources */,
 				AD263BC8212A8DAF0081E143 /* WKWebViewController.m in Sources */,

@@ -37,6 +37,7 @@
 		A714FA0C1E9DE505007849EE /* GDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA0B1E9DE505007849EE /* GDBViewController.m */; };
 		A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA131E9E1CBB007849EE /* CategoryViewController.m */; };
 		A714FA171E9E1DAC007849EE /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = A714FA161E9E1DAC007849EE /* NSString+Number.m */; };
+		AD02AA10212D6DCF00FE1F8B /* UpdateVersionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02AA0F212D6DCF00FE1F8B /* UpdateVersionVC.m */; };
 		AD263BC5212A8D980081E143 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD263BC4212A8D980081E143 /* UIWebViewController.m */; };
 		AD263BC8212A8DAF0081E143 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD263BC7212A8DAF0081E143 /* WKWebViewController.m */; };
 		AD263BCC212AAB900081E143 /* WHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD263BCB212AAB900081E143 /* WHAnimation.m */; };
@@ -152,6 +153,8 @@
 		A714FA131E9E1CBB007849EE /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		A714FA151E9E1DAC007849EE /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
 		A714FA161E9E1DAC007849EE /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
+		AD02AA0E212D6DCF00FE1F8B /* UpdateVersionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateVersionVC.h; sourceTree = "<group>"; };
+		AD02AA0F212D6DCF00FE1F8B /* UpdateVersionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateVersionVC.m; sourceTree = "<group>"; };
 		AD263BC3212A8D980081E143 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
 		AD263BC4212A8D980081E143 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
 		AD263BC6212A8DAF0081E143 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
@@ -411,6 +414,7 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD02AA0D212D6D5800FE1F8B /* 版本更新 */,
 				ADFC7585212C2AD7005331DF /* 多线程 */,
 				ADFC7581212C25FE005331DF /* 缓存 */,
 				ADBEB12B20A040EA0059EB49 /* 清除缓存 */,
@@ -474,6 +478,15 @@
 				AD3318A21FB2B1E7005E3C29 /* ZXPUnicode */,
 			);
 			path = "数组打印汉字";
+			sourceTree = "<group>";
+		};
+		AD02AA0D212D6D5800FE1F8B /* 版本更新 */ = {
+			isa = PBXGroup;
+			children = (
+				AD02AA0E212D6DCF00FE1F8B /* UpdateVersionVC.h */,
+				AD02AA0F212D6DCF00FE1F8B /* UpdateVersionVC.m */,
+			);
+			path = "版本更新";
 			sourceTree = "<group>";
 		};
 		AD263BC2212A8D790081E143 /* WebView */ = {
@@ -1053,6 +1066,7 @@
 				A714FA141E9E1CBB007849EE /* CategoryViewController.m in Sources */,
 				AD263BCC212AAB900081E143 /* WHAnimation.m in Sources */,
 				ADFC7584212C2626005331DF /* CacheViewController.m in Sources */,
+				AD02AA10212D6DCF00FE1F8B /* UpdateVersionVC.m in Sources */,
 				A714FA011E9DE044007849EE /* MASLayoutConstraint.m in Sources */,
 				A714FA041E9DE044007849EE /* NSArray+MASAdditions.m in Sources */,
 				AD263BC8212A8DAF0081E143 /* WKWebViewController.m in Sources */,

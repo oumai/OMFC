@@ -58,6 +58,7 @@
 #import "UIWebViewController.h"
 #import "UIWebAnimationVC.h"
 #import "WKWebViewController.h"
+#import "UpdateVersionVC.h"
 
 
 /*
@@ -129,7 +130,7 @@
                             @"title":@[@"URL",@"singleton",@"生命周期",@"Block",@"MJExtensionVC",@"我的订单BAT"]},
                           
                           @{@"header":@"",
-                            @"title":@[@"缓存",@"清除缓存",@"UIWebView",@"UIWebAnimationVC.",@"WKWebView",@"",@""]},
+                            @"title":@[@"缓存",@"清除缓存",@"UIWebView",@"UIWebAnimationVC.",@"WKWebView",@"版本更新提示",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -294,6 +295,10 @@
             }
             else if (indexPath.row ==  4) {
                 WKWebViewController *vc = [WKWebViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row ==  5) {
+                UpdateVersionVC *vc = [UpdateVersionVC new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
         }

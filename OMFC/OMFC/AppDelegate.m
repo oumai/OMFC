@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     //[[UIApplication sharedApplication] setStatusBarHidden:YES];
-    NSLog(@"good boy");
+    NSLog(@"bad boy  and  good girl,but the boy want to be good。");
     return YES;
 }
 

@@ -64,6 +64,7 @@
 /*
  ⑤
  */
+#import "MemberViewController.h"
 
 
 /*
@@ -133,7 +134,7 @@
                             @"title":@[@"缓存",@"清除缓存",@"UIWebView",@"UIWebAnimationVC.",@"WKWebView",@"版本更新提示",@""]},
                           
                           @{@"header":@"",
-                            @"title":@[@"",@"",@"",@"",@"",@""]},
+                            @"title":@[@"成员变量",@"",@"",@"",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},

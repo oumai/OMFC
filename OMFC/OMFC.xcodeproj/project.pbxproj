@@ -86,6 +86,8 @@
 		ADF57ACA1F2043DA0081757F /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF57AC91F2043DA0081757F /* Tools.m */; };
 		ADFC7584212C2626005331DF /* CacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC7583212C2626005331DF /* CacheViewController.m */; };
 		ADFC7588212C2B67005331DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC7587212C2B67005331DF /* GCDViewController.m */; };
+		B552DBF821476CD90088C018 /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B552DBF721476CD90088C018 /* MemberViewController.m */; };
+		B552DBFB21476F000088C018 /* MemberPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B552DBFA21476F000088C018 /* MemberPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -256,6 +258,10 @@
 		ADFC7583212C2626005331DF /* CacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheViewController.m; sourceTree = "<group>"; };
 		ADFC7586212C2B67005331DF /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		ADFC7587212C2B67005331DF /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		B552DBF621476CD90088C018 /* MemberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
+		B552DBF721476CD90088C018 /* MemberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
+		B552DBF921476F000088C018 /* MemberPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberPerson.h; sourceTree = "<group>"; };
+		B552DBFA21476F000088C018 /* MemberPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberPerson.m; sourceTree = "<group>"; };
 		FA476B6782CCD6DFD15B3D80 /* Pods-OMFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMFC.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMFC/Pods-OMFC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -414,6 +420,7 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B552DBF521476C970088C018 /* 成员变量 */,
 				AD02AA0D212D6D5800FE1F8B /* 版本更新 */,
 				ADFC7585212C2AD7005331DF /* 多线程 */,
 				ADFC7581212C25FE005331DF /* 缓存 */,
@@ -877,6 +884,17 @@
 			path = "多线程";
 			sourceTree = "<group>";
 		};
+		B552DBF521476C970088C018 /* 成员变量 */ = {
+			isa = PBXGroup;
+			children = (
+				B552DBF621476CD90088C018 /* MemberViewController.h */,
+				B552DBF721476CD90088C018 /* MemberViewController.m */,
+				B552DBF921476F000088C018 /* MemberPerson.h */,
+				B552DBFA21476F000088C018 /* MemberPerson.m */,
+			);
+			path = "成员变量";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1021,6 +1039,7 @@
 				A70F470F1EA05B98003914CC /* NSArray+Log.m in Sources */,
 				A714FA061E9DE044007849EE /* View+MASAdditions.m in Sources */,
 				AD6CEADD1F0E35FF0013BD7F /* OMConfigNetVC.m in Sources */,
+				B552DBF821476CD90088C018 /* MemberViewController.m in Sources */,
 				A714FA0C1E9DE505007849EE /* GDBViewController.m in Sources */,
 				A70F47121EA067FD003914CC /* NSDictionary+Log.m in Sources */,
 				A714F9F71E9DE044007849EE /* NSAttributedString+ParagraphStyle.m in Sources */,
@@ -1070,6 +1089,7 @@
 				A714FA011E9DE044007849EE /* MASLayoutConstraint.m in Sources */,
 				A714FA041E9DE044007849EE /* NSArray+MASAdditions.m in Sources */,
 				AD263BC8212A8DAF0081E143 /* WKWebViewController.m in Sources */,
+				B552DBFB21476F000088C018 /* MemberPerson.m in Sources */,
 				ADF5476120721D9B00ACCDF5 /* OMManager.m in Sources */,
 				AD6CEAE01F0E37820013BD7F /* OMMainVC.m in Sources */,
 				A714F9FD1E9DE044007849EE /* UILabel+Siman.m in Sources */,

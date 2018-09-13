@@ -39,6 +39,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSLog(@"oumaiko@yahoo.com");
     
     MemberPerson *per = [MemberPerson new];
     per.age = @20;

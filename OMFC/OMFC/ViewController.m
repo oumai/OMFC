@@ -306,7 +306,11 @@
         /*弹框*/
         else if (indexPath.section == 4)
         {
-             }
+            if (indexPath.row == 0) {
+                MemberViewController *vc = [MemberViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+        }
         
         /*手势*/
         else if (indexPath.section == 5)

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 康美. All rights reserved.
 //
 
-#import "OMPerson.h"
+#import "MemberPerson.h"
 
 @implementation MemberPerson
 

@@ -12,7 +12,7 @@
  问题：
  成员变量(实例变量)和属性变量有什么区别
  
- 
+ 创建属性的时候同时生成了成员变量
  
  答案：
  局部变量存放在
@@ -24,6 +24,8 @@
  成员变量存放
  堆中
  
+ 
+ https://my.oschina.net/360yg/blog/1626086
  */
 #import "MemberViewController.h"
 #import "MemberPerson.h"
@@ -37,6 +39,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    MemberPerson *per = [MemberPerson new];
+    per.age = @20;
     
     unsigned int count = 0;
     

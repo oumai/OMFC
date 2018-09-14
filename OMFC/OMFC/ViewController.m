@@ -65,7 +65,7 @@
  ⑤
  */
 #import "MemberViewController.h"
-
+#import "ARCAndMrcViewController.h"
 
 /*
  ⑥
@@ -134,7 +134,7 @@
                             @"title":@[@"缓存",@"清除缓存",@"UIWebView",@"UIWebAnimationVC.",@"WKWebView",@"版本更新提示",@""]},
                           
                           @{@"header":@"",
-                            @"title":@[@"成员变量",@"",@"",@"",@"",@""]},
+                            @"title":@[@"成员变量",@"判断ARC和MRC",@"",@"",@"",@""]},
                           
                           @{@"header":@"",
                             @"title":@[@"",@"",@"",@"",@"",@""]},
@@ -308,6 +308,10 @@
         {
             if (indexPath.row == 0) {
                 MemberViewController *vc = [MemberViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else if (indexPath.row ==  1) {
+                ARCAndMrcViewController *vc = [ARCAndMrcViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             }
         }

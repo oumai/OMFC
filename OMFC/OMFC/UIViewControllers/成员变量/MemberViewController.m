@@ -42,7 +42,7 @@
     NSLog(@"oumaiko@yahoo.com");
     
     MemberPerson *per = [MemberPerson new];
-    per.age = @20;
+    per.age = @"20";
     
     unsigned int count = 0;
     

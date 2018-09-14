@@ -88,6 +88,7 @@
 		ADFC7588212C2B67005331DF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC7587212C2B67005331DF /* GCDViewController.m */; };
 		B552DBF821476CD90088C018 /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B552DBF721476CD90088C018 /* MemberViewController.m */; };
 		B552DBFB21476F000088C018 /* MemberPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B552DBFA21476F000088C018 /* MemberPerson.m */; };
+		B5532A1A214A9084008D6A44 /* ARCAndMrcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5532A19214A9084008D6A44 /* ARCAndMrcViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -262,6 +263,8 @@
 		B552DBF721476CD90088C018 /* MemberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
 		B552DBF921476F000088C018 /* MemberPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberPerson.h; sourceTree = "<group>"; };
 		B552DBFA21476F000088C018 /* MemberPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberPerson.m; sourceTree = "<group>"; };
+		B5532A18214A9084008D6A44 /* ARCAndMrcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCAndMrcViewController.h; sourceTree = "<group>"; };
+		B5532A19214A9084008D6A44 /* ARCAndMrcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCAndMrcViewController.m; sourceTree = "<group>"; };
 		FA476B6782CCD6DFD15B3D80 /* Pods-OMFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMFC.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMFC/Pods-OMFC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -420,6 +423,7 @@
 		A714FA081E9DE4F2007849EE /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B5532A17214A9065008D6A44 /* ARC和MRC判断 */,
 				B552DBF521476C970088C018 /* 成员变量 */,
 				AD02AA0D212D6D5800FE1F8B /* 版本更新 */,
 				ADFC7585212C2AD7005331DF /* 多线程 */,
@@ -617,10 +621,10 @@
 		AD71CD7420A5268F003A7F97 /* 自定义代码块 */ = {
 			isa = PBXGroup;
 			children = (
+				AD71CD7820A5268F003A7F97 /* 9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet */,
 				AD71CD7520A5268F003A7F97 /* 0282BD47-05B3-466D-B7E6-4543F33E83A5.codesnippet */,
 				AD71CD7620A5268F003A7F97 /* 6279005B-72B2-472E-A699-866024AD6DEE.codesnippet */,
 				AD71CD7720A5268F003A7F97 /* 809C85AA-A69D-48C5-89BA-7333791E76D1.codesnippet */,
-				AD71CD7820A5268F003A7F97 /* 9CB9E649-C122-4779-BD1B-CA75356E7653.codesnippet */,
 				AD71CD7920A5268F003A7F97 /* C8C23172-F9CB-4EF4-8B38-7BC8ED00887A.codesnippet */,
 			);
 			path = "自定义代码块";
@@ -895,6 +899,15 @@
 			path = "成员变量";
 			sourceTree = "<group>";
 		};
+		B5532A17214A9065008D6A44 /* ARC和MRC判断 */ = {
+			isa = PBXGroup;
+			children = (
+				B5532A18214A9084008D6A44 /* ARCAndMrcViewController.h */,
+				B5532A19214A9084008D6A44 /* ARCAndMrcViewController.m */,
+			);
+			path = "ARC和MRC判断";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1063,6 +1076,7 @@
 				A714F9BC1E9DDF41007849EE /* ViewController.m in Sources */,
 				A714F9B91E9DDF41007849EE /* AppDelegate.m in Sources */,
 				A714FA021E9DE044007849EE /* MASViewAttribute.m in Sources */,
+				B5532A1A214A9084008D6A44 /* ARCAndMrcViewController.m in Sources */,
 				ADBAA38B207B079F00F538F5 /* SampleObject.m in Sources */,
 				ADB950DF207F0EC900B6C215 /* Student.m in Sources */,
 				AD75F24E207D973F00E0C0CD /* BATWillPayCell.m in Sources */,

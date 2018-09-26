@@ -444,6 +444,7 @@
 				ADF5475E20721D5400ACCDF5 /* 单例 */,
 				AD5333192074576A00AB63A8 /* 生命周期 */,
 				AD71CD7420A5268F003A7F97 /* 自定义代码块 */,
+				B5568976215B1083001D631E /* 修改项目模板 */,
 				AD9501FE1FE39F6B002281D5 /* 硬件 */,
 			);
 			path = UIViewControllers;
@@ -906,6 +907,13 @@
 				B5532A19214A9084008D6A44 /* ARCAndMrcViewController.m */,
 			);
 			path = "ARC和MRC判断";
+			sourceTree = "<group>";
+		};
+		B5568976215B1083001D631E /* 修改项目模板 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "修改项目模板";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
